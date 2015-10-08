@@ -20,6 +20,7 @@ public class PlayerStatUIControls : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
+        
         healthcount = player.hitcount;
         stamina.value = stamina.maxValue;
         //Need to add hit count from player or some interaction from that.
