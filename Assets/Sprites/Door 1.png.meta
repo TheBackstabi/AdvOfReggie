@@ -1,19 +1,21 @@
 fileFormatVersion: 2
-guid: 583df8b21d36805469e4e77ea0ea3b02
-timeCreated: 1444258120
+guid: 4c5b0790b312a7e48bd59e2ba112381f
+timeCreated: 1444265606
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: buildings_autotile3_0
-    21300002: buildings_autotile3_1
-    21300004: buildings_autotile3_2
-    21300006: buildings_autotile3_3
-    21300008: buildings_autotile3_4
-    21300010: buildings_autotile3_5
-    21300012: buildings_autotile3_6
-    21300014: buildings_autotile3_7
-    21300016: buildings_autotile3_8
-    21300018: buildings_autotile3_9
+    21300000: Door 1_0
+    21300002: Door 1_1
+    21300004: Door 1_2
+    21300006: Door 1_3
+    21300008: Door 1_4
+    21300010: Door 1_5
+    21300012: Door 1_6
+    21300014: Door 1_7
+    21300016: Door 1_8
+    21300018: Door 1_9
+    21300020: Door 1_10
+    21300022: Door 1_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -60,103 +62,123 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: buildings_autotile3_0
+    - name: Door 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 64
-        height: 64
+        y: 180
+        width: 32
+        height: 60
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: buildings_autotile3_1
+    - name: Door 1_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
+        x: 0
+        y: 119
+        width: 32
+        height: 61
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: buildings_autotile3_2
+    - name: Door 1_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
+        x: 0
+        y: 59
+        width: 32
+        height: 60
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: buildings_autotile3_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: buildings_autotile3_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: buildings_autotile3_5
+    - name: Door 1_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: .506345272, y: .493655086}
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: buildings_autotile3_6
+    - name: Door 1_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Door 1_5
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: .525381088, y: .474619031}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: buildings_autotile3_7
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 59
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: buildings_autotile3_8
+    - name: Door 1_6
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
+        x: 32
+        y: 59
+        width: 32
+        height: 60
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: buildings_autotile3_9
+    - name: Door 1_7
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
+        x: 64
+        y: 59
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Door 1_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 119
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Door 1_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 119
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Door 1_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 180
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Door 1_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 180
+        width: 32
+        height: 60
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
