@@ -3,7 +3,6 @@ using System.Collections;
 
 public class AM_NPCScript : MonoBehaviour {
     public GameObject Reggie;
-    public GameObject Weapon;
     public float moveSpeed = 5.0f; // Movement speed
     public int damageVal = 1; // Damage dealt to player
     public float attackSpeed = 2.0f; // Rate of attack
@@ -18,6 +17,8 @@ public class AM_NPCScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         currHealth = spawnHealth;
+
+
    	}
 	
 	// Update is called once per frame
@@ -48,20 +49,20 @@ public class AM_NPCScript : MonoBehaviour {
             // We're in range, attack.
 
             if (timeSinceLastAttack < attackSpeed)
+            {
                 timeSinceLastAttack += Time.deltaTime;
+            }
             else
             {
                 timeSinceLastAttack = 0;
-
-                // Remove once animation keyframes are done.
-                Attack();
+                GetComponent<Animator>().SetTrigger("Attacking");
             }
         }
 	}
 
     void Attack()
     {
-        Reggie.GetComponent<PlayerStats>().hitcount -= (int)damageVal;
+        Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
     }
 
     void OnCollisionEnter2D(Collision2D coll)
