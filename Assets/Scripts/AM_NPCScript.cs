@@ -5,10 +5,9 @@ public class AM_NPCScript : MonoBehaviour {
     public GameObject Reggie;
     public float moveSpeed = 5.0f; // Movement speed
     public int damageVal = 1; // Damage dealt to player
-    public float attackSpeed = 2.0f; // Rate of attack
     public int spawnHealth = 2; // Initial health value
     public float attackRange = 3.0f; // From how far can they hit
-    public float aggroRange = 10.0f; // When will they move towards the player
+    public float aggroRange = 15.0f; // When will they move towards the player
     public bool IsShielded = false; // Enable for ShieldBro
 
     private float currHealth;
@@ -17,56 +16,61 @@ public class AM_NPCScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         currHealth = spawnHealth;
-
-
    	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        if (Vector3.Distance(Reggie.transform.position, transform.position) > attackRange && Vector3.Distance(Reggie.transform.position, transform.position) <= aggroRange)
+        if (gameObject.activeInHierarchy) // Only do stuff when active
         {
-            // We're not in attack range but within aggro range.
-
-            if (Reggie.transform.position.x > transform.position.x)
-                moveDir = 1;
-            else
-                moveDir = -1;
-
-            Vector3 currVel = GetComponent<Rigidbody2D>().velocity;
-            if (currVel.y == 0)
+            if (!IsShielded) // ShieldBros don't attack or move
             {
-                // We're on the ground, move into range
+                if (Vector3.Distance(Reggie.transform.position, transform.position) > attackRange && Vector3.Distance(Reggie.transform.position, transform.position) <= aggroRange)
+                {
+                    // We're not in attack range but within aggro range.
 
-                if (currVel.x < moveSpeed)
-                    currVel.x = moveSpeed * moveDir;
+                    GetComponent<Animator>().SetBool("IsInRange", false);
+                    if (Reggie.transform.position.x > transform.position.x)
+                        moveDir = 1;
+                    else
+                        moveDir = -1;
+
+                    Vector3 currVel = GetComponent<Rigidbody2D>().velocity;
+                    if (currVel.y == 0)
+                    {
+                        // We're on the ground, move into range
+
+                        if (currVel.x < moveSpeed)
+                            currVel.x = moveSpeed * moveDir;
+                        else
+                            currVel.x = currVel.x + moveDir * Time.deltaTime * moveSpeed;
+                        GetComponent<Rigidbody2D>().velocity = currVel;
+                    }
+                }
                 else
-                    currVel.x = currVel.x + moveDir * Time.deltaTime * moveSpeed;
-                GetComponent<Rigidbody2D>().velocity = currVel;
-            }
-        }
-        else
-        {
-            // We're in range, attack.
+                {
+                    // We're in range, attack.
 
-            if (timeSinceLastAttack < attackSpeed)
-            {
-                timeSinceLastAttack += Time.deltaTime;
-            }
-            else
-            {
-                timeSinceLastAttack = 0;
-                GetComponent<Animator>().SetTrigger("Attacking");
+                    GetComponent<Animator>().SetBool("IsInRange", true);
+                }
             }
         }
 	}
 
-    void Attack()
+    void MeleeAttack()
     {
         Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
     }
 
+    void FireRanged()
+    {
+
+    }
+
     void OnCollisionEnter2D(Collision2D coll)
     {
-        
+        if (coll.gameObject.tag == "PlayerWeapon")
+        {
+            //currHealth -= coll.gameObject.GetComponent<PlayerWeaponScript>().currentDamage;
+        }
     }
 }
