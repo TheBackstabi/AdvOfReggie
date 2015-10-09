@@ -3,9 +3,6 @@ using System.Collections;
 
 public class FallingBehaviour : MonoBehaviour 
 {
-	bool fall = false;
-
-
 	// Use this for initialization
 	void Start () 
 	{
@@ -22,7 +19,7 @@ public class FallingBehaviour : MonoBehaviour
 	{
 		if(coll.collider.tag == "PlayerWeapon")
 		{
-			GetComponent<Rigidbody2D>().WakeUp();
+			GetComponent<Rigidbody2D>().gravityScale = 1;
 		}
 	}
 }
