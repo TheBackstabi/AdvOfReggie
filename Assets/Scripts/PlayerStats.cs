@@ -84,7 +84,7 @@ public class PlayerStats : MonoBehaviour {
         else
         {
             Avatar.sprite = Idle;
-            Invoke("StaminaRegen", 2.3f);
+            Invoke("StaminaRegen", 1.5f);
         }
 
         if (Input.GetKeyDown(KeyCode.W) && GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()) && GetComponent<Rigidbody2D>().velocity.y == 0)
@@ -99,7 +99,7 @@ public class PlayerStats : MonoBehaviour {
 
     void StaminaRegen()
     {
-        if (availstamina > 100)
+        if (availstamina < 100)
             availstamina++;
         else
             availstamina = 100;
