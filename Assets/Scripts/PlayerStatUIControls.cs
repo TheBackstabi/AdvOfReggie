@@ -31,6 +31,8 @@ public class PlayerStatUIControls : MonoBehaviour {
 	void Update () 
     {
         stamina.value = player.availstamina;
+        if(stamina.value == 0)
+           // stamina.
         if(healthcount != player.hitcount)
         health.rectTransform.sizeDelta = new Vector2(healthwidth, health.rectTransform.sizeDelta.y);
 	    

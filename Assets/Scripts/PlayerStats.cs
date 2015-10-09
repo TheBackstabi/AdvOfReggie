@@ -30,7 +30,7 @@ public class PlayerStats : MonoBehaviour {
         collision = player.GetComponent<BoxCollider2D>();
         Avatar = player.GetComponent<SpriteRenderer>();
         PlayerLocation = player.transform;
-        Weapon.GetComponent<SpriteRenderer>().sprite = MeleeWeapon;
+        //Weapon.GetComponent<SpriteRenderer>().sprite = MeleeWeapon;
 	}
 	
 	// Update is called once per frame
@@ -39,6 +39,11 @@ public class PlayerStats : MonoBehaviour {
         if (collision.IsTouchingLayers(14))
         {
             hitcount--;
+        }
+
+        if(transform.position.x <= Camera.transform.position.x - 2.9)
+        {
+            transform.position = new Vector3(Camera.transform.position.x - 2.9f, transform.position.y, 0.0f);
         }
 
         
@@ -50,7 +55,7 @@ public class PlayerStats : MonoBehaviour {
         {
             Avatar.sprite = Crouching;
         }
-        else if (Input.GetKey(KeyCode.A) && Camera.transform.localPosition.x - 2.8f < PlayerLocation.position.x) //&& GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()))
+        else if (Input.GetKey(KeyCode.A)) //&& GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()))
         {
             //Avatar.sprite = Walking;
             //player.transform.localScale = new Vector3(-1.0f *player.transform.localScale.x , player.transform.localScale.y, player.transform.localScale.z);
@@ -67,22 +72,36 @@ public class PlayerStats : MonoBehaviour {
         }
         else if (Input.GetKey(KeyCode.Tab))
         {
+            CancelInvoke();
             if (WeaponSelected)
                 player.GetComponentInChildren<SpriteRenderer>().sprite = RangedWeapon;
             else
                 player.GetComponentInChildren<SpriteRenderer>().sprite = MeleeWeapon;
 
             WeaponSelected = !WeaponSelected;
+            availstamina -= 10;
         }
         else
         {
             Avatar.sprite = Idle;
+            Invoke("StaminaRegen", 2.3f);
         }
 
-        if (Input.GetKeyDown(KeyCode.W) && GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()))
+        if (Input.GetKeyDown(KeyCode.W) && GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()) && GetComponent<Rigidbody2D>().velocity.y == 0)
         {
             //Avatar.sprite = Jumping;
+            CancelInvoke();
             player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 300));
+            availstamina -= 15;
+            
         }
+    }
+
+    void StaminaRegen()
+    {
+        if (availstamina > 100)
+            availstamina++;
+        else
+            availstamina = 100;
     }
 }
