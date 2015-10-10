@@ -45,11 +45,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\PlayerCrouch.cs" />
      <Compile Include="Assets\Scripts\CameraLock.cs" />
-     <Compile Include="Assets\Scripts\PlayerStatUIControls.cs" />
-     <Compile Include="Assets\Scripts\PlayerStats.cs" />
-     <Compile Include="Assets\WeaponStats.cs" />
+     <Compile Include="Assets\Scripts\FireProjectile.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerCrouch.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerStatUIControls.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\WeaponScripts\EquippedWeapon.cs" />
+     <Compile Include="Assets\Scripts\WeaponStats.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Coding and Game Engines/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
