@@ -17,11 +17,11 @@ public class PlayerStats : MonoBehaviour {
     public Sprite MeleeWeapon;
     public Sprite RangedWeapon;
     private bool WeaponSelected = false;
-    private Transform PlayerLocation;
-    public GameObject Camera;
+    public GameObject Camera1;
     public GameObject GroundCheck;
     public GameObject Ground;
     public GameObject Weapon;
+    private bool canJump;
 
 
 	void Start () 
@@ -29,8 +29,9 @@ public class PlayerStats : MonoBehaviour {
        
         collision = player.GetComponent<BoxCollider2D>();
         Avatar = player.GetComponent<SpriteRenderer>();
-        PlayerLocation = player.transform;
-        //Weapon.GetComponent<SpriteRenderer>().sprite = MeleeWeapon;
+        //Weapon.GetComponent<SpriteRenderer>().sprite = MeleeWeapon;\
+        //Camera.main.orthograpicSize = 4.2f;
+        
 	}
 	
 	// Update is called once per frame
@@ -41,11 +42,12 @@ public class PlayerStats : MonoBehaviour {
             hitcount--;
         }
 
-        if(transform.position.x <= Camera.transform.position.x - 2.9)
+        if(transform.position.x <= Camera1.transform.position.x - 7.2f)
         {
-            transform.position = new Vector3(Camera.transform.position.x - 2.9f, transform.position.y, 0.0f);
+            transform.position = new Vector3(Camera1.transform.position.x - 7.2f, transform.position.y, 0.0f);
         }
 
+        
         
 	}
 
@@ -74,9 +76,9 @@ public class PlayerStats : MonoBehaviour {
         {
             CancelInvoke();
             if (WeaponSelected)
-                player.GetComponentInChildren<SpriteRenderer>().sprite = RangedWeapon;
+                Weapon.GetComponent<SpriteRenderer>().sprite = RangedWeapon;
             else
-                player.GetComponentInChildren<SpriteRenderer>().sprite = MeleeWeapon;
+                Weapon.GetComponent<SpriteRenderer>().sprite = MeleeWeapon;
 
             WeaponSelected = !WeaponSelected;
             availstamina -= 10;
@@ -87,9 +89,10 @@ public class PlayerStats : MonoBehaviour {
             Invoke("StaminaRegen", 1.5f);
         }
 
-        if (Input.GetKeyDown(KeyCode.W) && GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()) && GetComponent<Rigidbody2D>().velocity.y == 0)
+        if (Input.GetKeyDown(KeyCode.W) && canJump)//&& GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()) && GetComponent<Rigidbody2D>().velocity.y == 0)
         {
             //Avatar.sprite = Jumping;
+            canJump = false;
             CancelInvoke();
             player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 300));
             availstamina -= 15;
@@ -103,5 +106,16 @@ public class PlayerStats : MonoBehaviour {
             availstamina++;
         else
             availstamina = 100;
+    }
+
+    void OnCollision2DEnter(Collider2D other)
+    {
+        if (other.gameObject.tag == "Platform")
+            canJump = true;
+        if(other.gameObject.tag == "Jumpable")
+            player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 400));
+        if (other.gameObject.tag == "Hazardous")
+            hitcount--;
+
     }
 }

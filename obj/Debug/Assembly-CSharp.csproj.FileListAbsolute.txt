@@ -1,5 +1,3 @@
-F:\projectcode\RoG(Mid Project)\AdvOfReggie\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
-F:\projectcode\RoG(Mid Project)\AdvOfReggie\obj\Debug\Assembly-CSharp.pdb
 F:\projectcode\RoG(Mid Project)\AdvOfReggie\Temp\bin\Debug\Assembly-CSharp.dll
 F:\projectcode\RoG(Mid Project)\AdvOfReggie\Temp\bin\Debug\Assembly-CSharp.pdb
 F:\projectcode\RoG(Mid Project)\AdvOfReggie\Temp\bin\Debug\Mono.Cecil.dll
@@ -19,4 +17,6 @@ F:\projectcode\RoG(Mid Project)\AdvOfReggie\Temp\bin\Debug\UnityEngine.xml
 F:\projectcode\RoG(Mid Project)\AdvOfReggie\Temp\bin\Debug\UnityEditor.xml
 F:\projectcode\RoG(Mid Project)\AdvOfReggie\Temp\bin\Debug\UnityEngine.UI.xml
 F:\projectcode\RoG(Mid Project)\AdvOfReggie\Temp\bin\Debug\UnityEngine.Networking.xml
+F:\projectcode\RoG(Mid Project)\AdvOfReggie\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 F:\projectcode\RoG(Mid Project)\AdvOfReggie\obj\Debug\Assembly-CSharp.dll
+F:\projectcode\RoG(Mid Project)\AdvOfReggie\obj\Debug\Assembly-CSharp.pdb
