@@ -1,0 +1,254 @@
+fileFormatVersion: 2
+guid: 8065fedb88f3f7541a74472623397098
+timeCreated: 1444264928
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Agriculture 1_0
+    21300002: Agriculture 1_1
+    21300004: Agriculture 1_2
+    21300006: Agriculture 1_3
+    21300008: Agriculture 1_4
+    21300010: Agriculture 1_5
+    21300012: Agriculture 1_6
+    21300014: Agriculture 1_7
+    21300016: Agriculture 1_8
+    21300018: Agriculture 1_9
+    21300020: Agriculture 1_10
+    21300022: Agriculture 1_11
+    21300024: Agriculture 1_12
+    21300026: Agriculture 1_13
+    21300028: Agriculture 1_14
+    21300030: Agriculture 1_15
+    21300032: Agriculture 1_16
+    21300034: Agriculture 1_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Agriculture 1_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 448
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 388
+        width: 62
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 287
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_3
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 255
+        width: 60
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 96
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 131
+        width: 96
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_6
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 128
+        width: 85
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 31
+        width: 89
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 4
+        width: 79
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_9
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 3
+        width: 79
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_10
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 89
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_11
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 448
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_12
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 448
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_13
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 259
+        width: 90
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_14
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 391
+        width: 60
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_15
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 388
+        width: 61
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_16
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 391
+        width: 60
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Agriculture 1_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 258
+        width: 94
+        height: 126
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

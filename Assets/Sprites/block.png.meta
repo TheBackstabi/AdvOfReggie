@@ -1,15 +1,11 @@
 fileFormatVersion: 2
-guid: 522b9bc4835c8894e90f2121b313ad17
-timeCreated: 1444265125
+guid: 664c9f2d2563b3b478c1dea41d0a5d25
+timeCreated: 1444440342
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: couch_0
-    21300002: couch_1
-    21300004: couch_2
-    21300006: couch_3
-    21300008: couch_4
-    21300010: couch_5
+    21300000: block_0
+    21300002: block_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -56,23 +52,23 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: couch_0
+    - name: block_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 95
-        width: 71
-        height: 37
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: couch_2
+    - name: block_1
       rect:
         serializedVersion: 2
-        x: 102
-        y: 29
-        width: 142
-        height: 74
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

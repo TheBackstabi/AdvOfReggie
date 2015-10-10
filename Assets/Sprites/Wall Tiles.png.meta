@@ -1,0 +1,430 @@
+fileFormatVersion: 2
+guid: 4312d8948731d6745bc5d1f4b490457e
+timeCreated: 1444263474
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: celianna_clutter_walls2_8
+    21300002: celianna_clutter_walls2_9
+    21300004: celianna_clutter_walls2_10
+    21300006: celianna_clutter_walls2_11
+    21300008: celianna_clutter_walls2_12
+    21300010: celianna_clutter_walls2_13
+    21300012: celianna_clutter_walls2_14
+    21300014: celianna_clutter_walls2_15
+    21300016: celianna_clutter_walls2_23
+    21300018: celianna_clutter_walls2_32
+    21300020: celianna_clutter_walls2_33
+    21300022: celianna_clutter_walls2_34
+    21300024: celianna_clutter_walls2_35
+    21300026: celianna_clutter_walls2_36
+    21300028: celianna_clutter_walls2_37
+    21300030: celianna_clutter_walls2_38
+    21300032: celianna_clutter_walls2_39
+    21300034: celianna_clutter_walls2_48
+    21300036: celianna_clutter_walls2_49
+    21300038: celianna_clutter_walls2_50
+    21300040: celianna_clutter_walls2_51
+    21300042: celianna_clutter_walls2_52
+    21300044: celianna_clutter_walls2_53
+    21300046: celianna_clutter_walls2_54
+    21300048: celianna_clutter_walls2_55
+    21300050: celianna_clutter_walls2_57
+    21300052: celianna_clutter_walls2_72
+    21300054: celianna_clutter_walls2_73
+    21300056: celianna_clutter_walls2_74
+    21300058: celianna_clutter_walls2_75
+    21300060: celianna_clutter_walls2_76
+    21300062: celianna_clutter_walls2_77
+    21300064: celianna_clutter_walls2_78
+    21300066: celianna_clutter_walls2_79
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: celianna_clutter_walls2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 530
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 530
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 530
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 531
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_13
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 531
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 531
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 531
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_39
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 211
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 211
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 211
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 211
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 211
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 211
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_55
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 211
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_57
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 210
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_73
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_75
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_76
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_77
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_78
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: celianna_clutter_walls2_79
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

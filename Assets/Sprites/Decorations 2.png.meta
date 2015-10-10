@@ -1,0 +1,958 @@
+fileFormatVersion: 2
+guid: 1f42fc2d11e095b4ca95099b78311362
+timeCreated: 1444264445
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Decorations 2_9
+    21300002: Decorations 2_10
+    21300004: Decorations 2_11
+    21300006: Decorations 2_12
+    21300008: Decorations 2_13
+    21300010: Decorations 2_14
+    21300012: Decorations 2_15
+    21300014: Decorations 2_16
+    21300016: Decorations 2_17
+    21300018: Decorations 2_18
+    21300020: Decorations 2_19
+    21300022: Decorations 2_20
+    21300024: Decorations 2_21
+    21300026: Decorations 2_22
+    21300028: Decorations 2_23
+    21300030: Decorations 2_24
+    21300032: Decorations 2_25
+    21300034: Decorations 2_26
+    21300036: Decorations 2_27
+    21300038: Decorations 2_28
+    21300040: Decorations 2_29
+    21300042: Decorations 2_30
+    21300044: Decorations 2_31
+    21300046: Decorations 2_32
+    21300048: Decorations 2_33
+    21300050: Decorations 2_34
+    21300052: Decorations 2_35
+    21300054: Decorations 2_36
+    21300056: Decorations 2_37
+    21300058: Decorations 2_38
+    21300060: Decorations 2_39
+    21300062: Decorations 2_40
+    21300064: Decorations 2_41
+    21300066: Decorations 2_42
+    21300068: Decorations 2_43
+    21300070: Decorations 2_44
+    21300072: Decorations 2_45
+    21300074: Decorations 2_46
+    21300076: Decorations 2_47
+    21300078: Decorations 2_48
+    21300080: Decorations 2_49
+    21300082: Decorations 2_50
+    21300084: Decorations 2_51
+    21300086: Decorations 2_52
+    21300088: Decorations 2_53
+    21300090: Decorations 2_54
+    21300092: Decorations 2_55
+    21300094: Decorations 2_56
+    21300096: Decorations 2_57
+    21300098: Decorations 2_58
+    21300100: Decorations 2_59
+    21300102: Decorations 2_60
+    21300104: Decorations 2_61
+    21300106: Decorations 2_62
+    21300108: Decorations 2_63
+    21300110: Decorations 2_64
+    21300112: Decorations 2_65
+    21300114: Decorations 2_66
+    21300116: Decorations 2_67
+    21300118: Decorations 2_68
+    21300120: Decorations 2_69
+    21300122: Decorations 2_70
+    21300124: Decorations 2_71
+    21300126: Decorations 2_72
+    21300128: Decorations 2_73
+    21300130: Decorations 2_74
+    21300132: Decorations 2_75
+    21300134: Decorations 2_76
+    21300136: Decorations 2_77
+    21300138: Decorations 2_78
+    21300140: Decorations 2_79
+    21300142: Decorations 2_80
+    21300144: Decorations 2_81
+    21300146: Decorations 2_82
+    21300148: Decorations 2_83
+    21300150: Decorations 2_84
+    21300152: Decorations 2_85
+    21300154: Decorations 2_86
+    21300156: Decorations 2_87
+    21300158: Decorations 2_88
+    21300160: Decorations 2_89
+    21300162: Decorations 2_90
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Decorations 2_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 370
+        width: 57
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 369
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_11
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 371
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_12
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 371
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_13
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 370
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_14
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 371
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_15
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 371
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_16
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 371
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_17
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 367
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_18
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 367
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_19
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 352
+        width: 39
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_20
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 352
+        width: 38
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_21
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 348
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_22
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 287
+        width: 29
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_23
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 285
+        width: 32
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_24
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 286
+        width: 15
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_25
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 288
+        width: 21
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_26
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 288
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_27
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 288
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_28
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 288
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_29
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 288
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_30
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 288
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_31
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 288
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_32
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 288
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_33
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 287
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_34
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 279
+        width: 29
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_35
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 294
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_36
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 201
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_37
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 201
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_38
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 230
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_39
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 230
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_40
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 235
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_41
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 201
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_42
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 201
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_43
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 201
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_44
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 225
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_45
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 225
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_46
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 225
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_47
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 225
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_48
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 215
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_49
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 202
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_50
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 200
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_51
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 201
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_52
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 201
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_53
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 164
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_54
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 164
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_55
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 164
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_56
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 159
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_57
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 148
+        width: 57
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_58
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 148
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_59
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 149
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_60
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 176
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_61
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 129
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_62
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 125
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_63
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 122
+        width: 29
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_64
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 122
+        width: 29
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_65
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 147
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_66
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 87
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_67
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 87
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_68
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 69
+        width: 32
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_69
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 79
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_70
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 79
+        width: 39
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_71
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 79
+        width: 38
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_72
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 71
+        width: 29
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_73
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 75
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_74
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 76
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_75
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 68
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_76
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 42
+        width: 32
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_77
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 43
+        width: 15
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_78
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 45
+        width: 21
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_79
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 9
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_80
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 9
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_81
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 9
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_82
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 9
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_83
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 10
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_84
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1
+        width: 20
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_85
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 11
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_86
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 45
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_87
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 45
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_88
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2
+        width: 68
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_89
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 8
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 2_90
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 8
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
