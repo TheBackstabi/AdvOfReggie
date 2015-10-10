@@ -6,7 +6,7 @@ public class PlayerStats : MonoBehaviour {
 	// Use this for initialization
 
     public int hitcount = 3;
-    public int availstamina = 100;
+    public float availstamina = 100;
     public GameObject player;
     private BoxCollider2D collision;
     private SpriteRenderer Avatar;
@@ -21,7 +21,8 @@ public class PlayerStats : MonoBehaviour {
     public GameObject GroundCheck;
     public GameObject Ground;
     public GameObject Weapon;
-    private bool canJump;
+    public bool canJump = true;
+    public bool isCrouched = false;
 
 
 	void Start () 
@@ -56,6 +57,12 @@ public class PlayerStats : MonoBehaviour {
         if (Input.GetKey(KeyCode.S))
         {
             Avatar.sprite = Crouching;
+            if (!isCrouched)
+            { 
+                Weapon.transform.position = new Vector3(Weapon.transform.position.x, Weapon.transform.position.y - 0.1f, Weapon.transform.position.z);
+                isCrouched = true;
+            }
+
         }
         else if (Input.GetKey(KeyCode.A)) //&& GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()))
         {
@@ -72,7 +79,7 @@ public class PlayerStats : MonoBehaviour {
             player.GetComponent<Rigidbody2D>().velocity = new Vector2(1.8f, player.GetComponent<Rigidbody2D>().velocity.y);
 
         }
-        else if (Input.GetKey(KeyCode.Tab))
+        else if (Input.GetKey(KeyCode.Tab) && availstamina >= 10)
         {
             CancelInvoke();
             if (WeaponSelected)
@@ -86,36 +93,52 @@ public class PlayerStats : MonoBehaviour {
         else
         {
             Avatar.sprite = Idle;
-            Invoke("StaminaRegen", 1.5f);
+            isCrouched = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.W) && canJump)//&& GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()) && GetComponent<Rigidbody2D>().velocity.y == 0)
+        if (Input.GetKeyDown(KeyCode.W) && /*canJump &&*/ availstamina >= 15 && GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()) && GetComponent<Rigidbody2D>().velocity.y == 0)
         {
             //Avatar.sprite = Jumping;
-            canJump = false;
+            //canJump = false;
             CancelInvoke();
-            player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 300));
+            player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 500));
             availstamina -= 15;
             
+        }
+
+        //if (GetComponent<Rigidbody2D>().velocity.y == 0 && GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()) || player.GetComponent<Collider2D>().IsTouchingLayers(15))
+        //{
+        //    canJump = true;
+        //}
+
+        Invoke("StaminaRegen", 0);
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            availstamina -= 5;
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            availstamina -= 5;
         }
     }
 
     void StaminaRegen()
     {
         if (availstamina < 100)
-            availstamina++;
+            availstamina += Time.deltaTime * 7.5f;
         else
             availstamina = 100;
     }
 
     void OnCollision2DEnter(Collider2D other)
     {
-        if (other.gameObject.tag == "Platform")
-            canJump = true;
         if(other.gameObject.tag == "Jumpable")
-            player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 400));
+            player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 600));
         if (other.gameObject.tag == "Hazardous")
             hitcount--;
 
     }
+
 }

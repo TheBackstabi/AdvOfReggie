@@ -45,9 +45,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\PlayerCrouch.cs" />
      <Compile Include="Assets\Scripts\CameraLock.cs" />
      <Compile Include="Assets\Scripts\PlayerStatUIControls.cs" />
      <Compile Include="Assets\Scripts\PlayerStats.cs" />
+     <Compile Include="Assets\WeaponStats.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Coding and Game Engines/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
