@@ -60,14 +60,14 @@ public class PlayerStats : MonoBehaviour {
             //Avatar.sprite = Walking;
             //player.transform.localScale = new Vector3(-1.0f *player.transform.localScale.x , player.transform.localScale.y, player.transform.localScale.z);
            // PlayerLocation.Translate(-0.1f, 0.0f, 0.0f);
-            player.GetComponent<Rigidbody2D>().velocity = new Vector2(-1.8f, player.GetComponent<Rigidbody2D>().velocity.y);
+            player.GetComponent<Rigidbody2D>().velocity = new Vector2(-4.2f, player.GetComponent<Rigidbody2D>().velocity.y);
 
         }
         else if (Input.GetKey(KeyCode.D)) //&& GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()))
         {
             //Avatar.sprite = Walking;
             //PlayerLocation.Translate(0.1f, 0.0f, 0.0f);
-            player.GetComponent<Rigidbody2D>().velocity = new Vector2(1.8f, player.GetComponent<Rigidbody2D>().velocity.y);
+            player.GetComponent<Rigidbody2D>().velocity = new Vector2(4.2f, player.GetComponent<Rigidbody2D>().velocity.y);
 
         }
         else if (Input.GetKey(KeyCode.Tab))
