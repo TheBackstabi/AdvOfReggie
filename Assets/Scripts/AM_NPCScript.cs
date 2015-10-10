@@ -8,7 +8,8 @@ public class AM_NPCScript : MonoBehaviour {
     public int spawnHealth = 2; // Initial health value
     public float attackRange = 3.0f; // From how far can they hit
     public float aggroRange = 15.0f; // When will they move towards the player
-    public bool IsShielded = false; // Enable for ShieldBro
+    public bool IsShielded = false; // Enable for ShieldBro; no attacking, no moving
+    public bool isRanged = false; // Enable for ranged mobs; no moving
 
     private float currHealth;
     private float moveDir;
@@ -28,22 +29,25 @@ public class AM_NPCScript : MonoBehaviour {
                 {
                     // We're not in attack range but within aggro range.
 
-                    GetComponent<Animator>().SetBool("IsInRange", false);
-                    if (Reggie.transform.position.x > transform.position.x)
-                        moveDir = 1;
-                    else
-                        moveDir = -1;
-
-                    Vector3 currVel = GetComponent<Rigidbody2D>().velocity;
-                    if (currVel.y == 0)
+                    if (!isRanged) // Ranged mobs dont' move
                     {
-                        // We're on the ground, move into range
-
-                        if (currVel.x < moveSpeed)
-                            currVel.x = moveSpeed * moveDir;
+                        GetComponent<Animator>().SetBool("IsInRange", false);
+                        if (Reggie.transform.position.x > transform.position.x)
+                            moveDir = 1;
                         else
-                            currVel.x = currVel.x + moveDir * Time.deltaTime * moveSpeed;
-                        GetComponent<Rigidbody2D>().velocity = currVel;
+                            moveDir = -1;
+
+                        Vector3 currVel = GetComponent<Rigidbody2D>().velocity;
+                        if (currVel.y == 0)
+                        {
+                            // We're on the ground, move into range
+
+                            if (currVel.x < moveSpeed)
+                                currVel.x = moveSpeed * moveDir;
+                            else
+                                currVel.x = currVel.x + moveDir * Time.deltaTime * moveSpeed;
+                            GetComponent<Rigidbody2D>().velocity = currVel;
+                        }
                     }
                 }
                 else
@@ -63,13 +67,14 @@ public class AM_NPCScript : MonoBehaviour {
 
     void FireRanged()
     {
-
+        // Code
     }
 
     void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.gameObject.tag == "PlayerWeapon")
         {
+            // Uncomment once PlayerWeaponScript is done.
             //currHealth -= coll.gameObject.GetComponent<PlayerWeaponScript>().currentDamage;
         }
     }
