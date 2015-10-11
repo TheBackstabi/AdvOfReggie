@@ -14,12 +14,12 @@ public class AM_NPCScript : MonoBehaviour {
 
     private float currHealth;
     private float moveDir, prevDir;
-    private float timeSinceLastAttack;
+    private AudioSource[] audioSources;
 	// Use this for initialization
 	void Start () {
         currHealth = spawnHealth;
         prevDir = 0;
-        timeSinceLastAttack = 1;
+        audioSources = GetComponents<AudioSource>();
    	}
 	
 	// Update is called once per frame
@@ -30,7 +30,9 @@ public class AM_NPCScript : MonoBehaviour {
             if (currHealth <= 0) // If I'm dead
             {
                 // Replace with isDead animator bool = true
-                Destroy(gameObject);
+
+                Dying();
+                Dead();
             }
 
             if (Reggie.transform.position.x > transform.position.x) // Adjust direction based on player loc
@@ -78,6 +80,7 @@ public class AM_NPCScript : MonoBehaviour {
                     // We're in range, attack.
                     if (!isRanged)
                         GetComponent<Animator>().SetBool("IsMoving", false);
+                    GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                     GetComponent<Animator>().SetBool("IsInRange", true);
                 }
             }
@@ -87,17 +90,25 @@ public class AM_NPCScript : MonoBehaviour {
     void MeleeAttack() // Used by animator
     {
         Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
+        audioSources[2].Play();
+    }
+
+    void PrepRangedSound() // Used by animator; fire arrow sfx is borked
+    {
+        audioSources[2].Play();
     }
 
     void FireRanged() // Used by animator
     {
         GameObject newArrow = Instantiate(Arrow, transform.position, transform.rotation) as GameObject;
         newArrow.GetComponent<AM_ArrowScript>().target = Reggie.transform;
+        newArrow.tag = "EnemyWeapon";
     }
 
     void Dying() // Used by animator
     {
         isActive = false;
+        audioSources[1].Play();
     }
 
     void Dead() // Used by animator
@@ -111,6 +122,8 @@ public class AM_NPCScript : MonoBehaviour {
         {
             // Uncomment once PlayerWeaponScript is done.
             //currHealth -= coll.gameObject.GetComponent<PlayerWeaponScript>().currentDamage;
+
+            audioSources[0].Play();
             currHealth -= 1;
         }
     }

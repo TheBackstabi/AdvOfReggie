@@ -36,4 +36,12 @@ public class AM_ArrowScript : MonoBehaviour {
     {
         Destroy(gameObject);
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (gameObject.tag == "EnemyWeapon" && other.gameObject.tag == "Player")
+            GetComponent<AudioSource>().Play();
+        else if (gameObject.tag == "PlayerWeapon" && other.gameObject.tag == "Enemy")
+            GetComponent<AudioSource>().Play();
+    }
 }

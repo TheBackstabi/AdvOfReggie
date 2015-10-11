@@ -24,7 +24,7 @@ public class AM_MobSpawnerScript : MonoBehaviour {
                 {
                     numToSpawn--;
                     sinceLastSpawn = 0;
-                    GameObject newEnemy = Instantiate(enemyType, transform.position, transform.rotation) as GameObject;
+                    Instantiate(enemyType, transform.position, transform.rotation);
                 }
             }
             else
@@ -33,7 +33,7 @@ public class AM_MobSpawnerScript : MonoBehaviour {
                 if (delay <= 0) // Spawn as soon as delay hits 0
                 {
                     numToSpawn--;
-                    GameObject newEnemy = Instantiate(enemyType, transform.position, transform.rotation) as GameObject;
+                    Instantiate(enemyType, transform.position, transform.rotation);
                 }
             }
         }
