@@ -4,33 +4,33 @@ using System.Collections;
 public class MusicTransitionScript : MonoBehaviour
 {
 
-    public GameObject Doggy = null;
-
+    public GameObject Player = null;
+	//public AudioClip FirstSound;
+	//public AudioClip SecondSound;
     public float TransitionSpeed = 0.25f;
-
     public bool Flip = false;
 
-    enum Triggered { NotTriggered, PamgaeaLoop, LightlessDawn };
+    enum Triggered { NotTriggered, FirstSound, SecondSound };
 
     Triggered transition;
 
-    AudioSource PamgaeaLoop = null;
-    AudioSource LightlessDawn = null;
+    AudioSource FirstSound = null;
+    AudioSource SecondSound = null;
 
     // Use this for initialization
     void Start()
     {
-        if(Doggy != null)
+        if(Player != null)
         {
-            foreach(AudioSource audioSource in Doggy.GetComponents<AudioSource>())
+            foreach(AudioSource audioSource in Player.GetComponents<AudioSource>())
             {
-                if(audioSource.clip != null && audioSource.clip.name == "PamgaeaLoop")
+                if(audioSource.clip != null && audioSource.clip.name == "Theme1")
                 {
-                    PamgaeaLoop = audioSource;
+                    FirstSound = audioSource;
                 }
-                else if(audioSource.clip != null && audioSource.clip.name == "LightlessDawn")
+                else if(audioSource.clip != null && audioSource.clip.name == "Theme2")
                 {
-                    LightlessDawn = audioSource;
+                    SecondSound = audioSource;
                 }
             }
         }
@@ -39,33 +39,33 @@ public class MusicTransitionScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (LightlessDawn != null && PamgaeaLoop != null)
+        if (SecondSound != null && FirstSound != null)
         {
-            if (transition == Triggered.LightlessDawn)
+            if (transition == Triggered.SecondSound)
             {
-                if (LightlessDawn.volume < 1)
+                if (SecondSound.volume < 1)
                 {
-                    LightlessDawn.volume += Time.deltaTime * TransitionSpeed;
-                    PamgaeaLoop.volume -= Time.deltaTime * TransitionSpeed;
+                    SecondSound.volume += Time.deltaTime * TransitionSpeed;
+                    FirstSound.volume -= Time.deltaTime * TransitionSpeed;
                 }
-                if (LightlessDawn.volume >= 1)
+                if (SecondSound.volume >= 1)
                 {
-                    LightlessDawn.volume = 1;
-                    PamgaeaLoop.volume = 0;
+                    SecondSound.volume = 1;
+                    FirstSound.volume = 0;
                     transition = Triggered.NotTriggered;
                 }
             }
-            else if (transition == Triggered.PamgaeaLoop)
+            else if (transition == Triggered.FirstSound)
             {
-                if (PamgaeaLoop.volume < 1)
+                if (FirstSound.volume < 1)
                 {
-                    PamgaeaLoop.volume += Time.deltaTime * TransitionSpeed;
-                    LightlessDawn.volume -= Time.deltaTime * TransitionSpeed;
+                    FirstSound.volume += Time.deltaTime * TransitionSpeed;
+                    SecondSound.volume -= Time.deltaTime * TransitionSpeed;
                 }
-                if (PamgaeaLoop.volume >= 1)
+                if (FirstSound.volume >= 1)
                 {
-                    PamgaeaLoop.volume = 1;
-                    LightlessDawn.volume = 0;
+                    FirstSound.volume = 1;
+                    SecondSound.volume = 0;
                     transition = Triggered.NotTriggered;
                 }
             }
@@ -76,17 +76,17 @@ public class MusicTransitionScript : MonoBehaviour
     {
         if (!Flip)
         {
-            if (Doggy.transform.position.x < gameObject.transform.position.x)
-                transition = Triggered.PamgaeaLoop;
+            if (Player.transform.position.x < gameObject.transform.position.x)
+                transition = Triggered.FirstSound;
             else
-                transition = Triggered.LightlessDawn;
+                transition = Triggered.SecondSound;
         }
         else
         {
-            if (Doggy.transform.position.x > gameObject.transform.position.x)
-                transition = Triggered.PamgaeaLoop;
+            if (Player.transform.position.x > gameObject.transform.position.x)
+                transition = Triggered.FirstSound;
             else
-                transition = Triggered.LightlessDawn;
+                transition = Triggered.SecondSound;
         }
     }
 }
