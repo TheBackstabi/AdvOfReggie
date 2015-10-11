@@ -3,40 +3,63 @@ using System.Collections;
 
 public class AM_NPCScript : MonoBehaviour {
     public GameObject Reggie;
+    public GameObject Arrow;
     public float moveSpeed = 5.0f; // Movement speed
     public int damageVal = 1; // Damage dealt to player
     public int spawnHealth = 2; // Initial health value
     public float attackRange = 3.0f; // From how far can they hit
-    public float aggroRange = 15.0f; // When will they move towards the player
     public bool IsShielded = false; // Enable for ShieldBro; no attacking, no moving
     public bool isRanged = false; // Enable for ranged mobs; no moving
+    public bool isActive = true;
 
     private float currHealth;
-    private float moveDir;
+    private float moveDir, prevDir;
     private float timeSinceLastAttack;
 	// Use this for initialization
 	void Start () {
         currHealth = spawnHealth;
+        prevDir = 0;
+        timeSinceLastAttack = 1;
    	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        if (gameObject.activeInHierarchy) // Only do stuff when active
+        if (isActive) // Only do stuff when active
         {
+
+            if (currHealth <= 0) // If I'm dead
+            {
+                // Replace with isDead animator bool = true
+                Destroy(gameObject);
+            }
+
+            if (Reggie.transform.position.x > transform.position.x) // Adjust direction based on player loc
+            {
+                moveDir = 1;
+            }
+            else
+            {
+                moveDir = -1;
+            }
+            if (prevDir != moveDir && prevDir != 0)
+            {
+                Vector3 x = transform.localScale;
+                x.x = -x.x;
+                transform.localScale = x;
+            }
+            prevDir = moveDir;
+
             if (!IsShielded) // ShieldBros don't attack or move
             {
-                if (Vector3.Distance(Reggie.transform.position, transform.position) > attackRange && Vector3.Distance(Reggie.transform.position, transform.position) <= aggroRange)
+                if (Vector3.Distance(Reggie.transform.position, transform.position) > attackRange)
                 {
-                    // We're not in attack range but within aggro range.
+                    // We're not in attack range
+                    
+                    GetComponent<Animator>().SetBool("IsInRange", false);
 
-                    if (!isRanged) // Ranged mobs dont' move
+                    if (!isRanged) // Ranged don't move left/right
                     {
-                        GetComponent<Animator>().SetBool("IsInRange", false);
-                        if (Reggie.transform.position.x > transform.position.x)
-                            moveDir = 1;
-                        else
-                            moveDir = -1;
-
+                        GetComponent<Animator>().SetBool("IsMoving", true);
                         Vector3 currVel = GetComponent<Rigidbody2D>().velocity;
                         if (currVel.y == 0)
                         {
@@ -50,24 +73,36 @@ public class AM_NPCScript : MonoBehaviour {
                         }
                     }
                 }
-                else
+                else if (Vector3.Distance(Reggie.transform.position, transform.position) <= attackRange)
                 {
                     // We're in range, attack.
-
+                    if (!isRanged)
+                        GetComponent<Animator>().SetBool("IsMoving", false);
                     GetComponent<Animator>().SetBool("IsInRange", true);
                 }
             }
         }
 	}
 
-    void MeleeAttack()
+    void MeleeAttack() // Used by animator
     {
         Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
     }
 
-    void FireRanged()
+    void FireRanged() // Used by animator
     {
-        // Code
+        GameObject newArrow = Instantiate(Arrow, transform.position, transform.rotation) as GameObject;
+        newArrow.GetComponent<AM_ArrowScript>().target = Reggie.transform;
+    }
+
+    void Dying() // Used by animator
+    {
+        isActive = false;
+    }
+
+    void Dead() // Used by animator
+    {
+        Destroy(gameObject);
     }
 
     void OnCollisionEnter2D(Collision2D coll)
@@ -76,6 +111,17 @@ public class AM_NPCScript : MonoBehaviour {
         {
             // Uncomment once PlayerWeaponScript is done.
             //currHealth -= coll.gameObject.GetComponent<PlayerWeaponScript>().currentDamage;
+            currHealth -= 1;
         }
+    }
+
+    void OnBecameInvisible()
+    {
+        isActive = false;
+    }
+
+    void OnBecameVisibile()
+    {
+        isActive = true;
     }
 }
