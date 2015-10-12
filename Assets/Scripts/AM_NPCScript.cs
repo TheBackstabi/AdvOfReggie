@@ -26,7 +26,7 @@ public class AM_NPCScript : MonoBehaviour {
 	void FixedUpdate () {
         if (isActive) // Only do stuff when active
         {
-
+            GetComponent<Rigidbody2D>().isKinematic = true;
             if (currHealth <= 0) // If I'm dead
             {
                 // Replace with isDead animator bool = true
@@ -66,12 +66,13 @@ public class AM_NPCScript : MonoBehaviour {
                         if (currVel.y == 0)
                         {
                             // We're on the ground, move into range
-
+                            
                             if (currVel.x < moveSpeed)
                                 currVel.x = moveSpeed * moveDir;
                             else
                                 currVel.x = currVel.x + moveDir * Time.deltaTime * moveSpeed;
                             GetComponent<Rigidbody2D>().velocity = currVel;
+                            
                         }
                     }
                 }
@@ -84,6 +85,7 @@ public class AM_NPCScript : MonoBehaviour {
                     GetComponent<Animator>().SetBool("IsInRange", true);
                 }
             }
+            GetComponent<Rigidbody2D>().isKinematic = false;
         }
 	}
 
@@ -122,9 +124,9 @@ public class AM_NPCScript : MonoBehaviour {
         {
             // Uncomment once PlayerWeaponScript is done.
             //currHealth -= coll.gameObject.GetComponent<PlayerWeaponScript>().currentDamage;
+            currHealth -= 1;
 
             audioSources[0].Play();
-            currHealth -= 1;
         }
     }
 
