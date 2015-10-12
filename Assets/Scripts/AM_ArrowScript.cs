@@ -5,7 +5,7 @@ public class AM_ArrowScript : MonoBehaviour {
     public float fireStrength = 100.0f;
     public Transform target = null;
 
-    private Quaternion myRotation;
+    private int currentDamage = 0;
 	// Use this for initialization
 	void Start () {
         if (tag == "PlayerWeapon")
@@ -39,9 +39,19 @@ public class AM_ArrowScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (gameObject.tag == "EnemyWeapon" && other.gameObject.tag == "Player")
+        if (gameObject.tag == "EnemyArrow" && other.gameObject.tag == "Player")
             GetComponent<AudioSource>().Play();
         else if (gameObject.tag == "PlayerWeapon" && other.gameObject.tag == "Enemy")
             GetComponent<AudioSource>().Play();
+    }
+
+    public void SetDamageVal(int _damage)
+    {
+        currentDamage = _damage;
+    }
+
+    public int GetDamageVal()
+    {
+        return currentDamage;
     }
 }
