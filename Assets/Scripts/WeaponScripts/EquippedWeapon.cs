@@ -9,7 +9,7 @@ public class EquippedWeapon : MonoBehaviour {
 
 	void Start () 
     {
-        transform.position = new Vector3(wielder.transform.position.x, wielder.transform.position.y, wielder.transform.position.z);	    
+        //transform.position = new Vector3(wielder.transform.position.x, wielder.transform.position.y, wielder.transform.position.z);	    
 	    
 	}
 	

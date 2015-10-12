@@ -14,6 +14,7 @@ public class PlayerStats : MonoBehaviour {
     public Sprite Crouching;
     public Sprite Walking;
     public Sprite Jumping;
+    public Sprite Attacking;
     public GameObject MeleeWeapon;
     public GameObject RangedWeapon;
     private bool WeaponSelected = false;
@@ -24,12 +25,15 @@ public class PlayerStats : MonoBehaviour {
     public bool canJump = true;
     public bool isCrouched = false;
     public bool Facingleft = false;
+    public int deathtimer = 10;
+    public GameObject ArrowType;
 
 
 	void Start () 
     {
         MeleeWeapon = GameObject.Find("Katana");
         RangedWeapon = GameObject.Find("Bow");
+        RangedWeapon.SetActive(false);
         collision = player.GetComponent<BoxCollider2D>();
         Avatar = player.GetComponent<SpriteRenderer>();
         //Weapon.GetComponent<SpriteRenderer>().sprite = MeleeWeapon;\
@@ -58,6 +62,7 @@ public class PlayerStats : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.S))
         {
+            //GetComponent<Animator>().SetBool("Crouch", true);
             Avatar.sprite = Crouching;
             if (!isCrouched)
             { 
@@ -66,8 +71,9 @@ public class PlayerStats : MonoBehaviour {
             }
 
         }
-        else if (Input.GetKey(KeyCode.A)) //&& GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()))
+        else if (Input.GetKey(KeyCode.A) && !isCrouched) //&& GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()))
         {
+            //GetComponent<Animator>().SetBool("Walking", true);
             //Avatar.sprite = Walking;
             //player.transform.localScale = new Vector3(-1.0f *player.transform.localScale.x , player.transform.localScale.y, player.transform.localScale.z);
            // PlayerLocation.Translate(-0.1f, 0.0f, 0.0f);
@@ -81,10 +87,11 @@ public class PlayerStats : MonoBehaviour {
             }
 
         }
-        else if (Input.GetKey(KeyCode.D)) //&& GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()))
+        else if (Input.GetKey(KeyCode.D) && !isCrouched) //&& GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()))
         {
-            //Avatar.sprite = Walking;
+            //GetComponent<Animator>().SetBool("Walking", true);
             //PlayerLocation.Translate(0.1f, 0.0f, 0.0f);
+            Avatar.sprite = Walking;
             Facingleft = false;
             player.GetComponent<Rigidbody2D>().velocity = new Vector2(1.8f, player.GetComponent<Rigidbody2D>().velocity.y);
             if (transform.localScale.x < 0.0f)
@@ -94,26 +101,39 @@ public class PlayerStats : MonoBehaviour {
 
             }
         }
-        else if (Input.GetKey(KeyCode.Tab) && availstamina >= 10)
-        {
-            CancelInvoke();
-            if (WeaponSelected)
-                Weapon = RangedWeapon;
-            else
-                Weapon = MeleeWeapon;
+        //else if (Input.GetKeyDown(KeyCode.Tab) && availstamina >= 10)
+        //{
+        //    CancelInvoke();
+        //    if (!WeaponSelected)
+        //    {
+        //        RangedWeapon.SetActive(true);
+        //        RangedWeapon.transform.position = MeleeWeapon.transform.position;
+        //        RangedWeapon.transform.localScale = new Vector3(RangedWeapon.transform.localScale.x * -1.0f, RangedWeapon.transform.localScale.y, RangedWeapon.transform.localScale.z);
+        //        MeleeWeapon.SetActive(false);
+        //        Weapon = RangedWeapon;
+        //    }
+        //    else
+        //    {
+        //        Weapon = MeleeWeapon;
+        //        RangedWeapon.SetActive(false);
+        //        MeleeWeapon.SetActive(true);
 
-            WeaponSelected = !WeaponSelected;
-            availstamina -= 10;
-        }
+
+        //    }
+        //    WeaponSelected = !WeaponSelected;
+        //    availstamina -= 10;
+        //}
         else
         {
-            Avatar.sprite = Idle;
+            //GetComponent<Animator>().SetBool("Walking", false);
+            //GetComponent<Animator>().SetBool("Crouch", false);
+           Avatar.sprite = Idle;
             isCrouched = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.W) && /*canJump &&*/ availstamina >= 15 && GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()) && GetComponent<Rigidbody2D>().velocity.y == 0)
+        if (Input.GetKeyDown(KeyCode.W) && /*canJump &&*/ availstamina >= 15 && GroundCheck.GetComponent<BoxCollider2D>().IsTouchingLayers(15) && GetComponent<Rigidbody2D>().velocity.y == 0)
         {
-            //Avatar.sprite = Jumping;
+            Avatar.sprite = Jumping;
             //canJump = false;
             CancelInvoke();
             player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 500));
@@ -130,12 +150,35 @@ public class PlayerStats : MonoBehaviour {
 
         if(Input.GetMouseButtonDown(0))
         {
+            Avatar.sprite = Attacking;
             availstamina -= 5;
+            if(MeleeWeapon.activeSelf)
+            {
+                MeleeWeapon.GetComponent<BoxCollider2D>().enabled = true;                
+            }
+                
         }
 
         if (Input.GetMouseButtonDown(1))
         {
+            //GetComponent<Animator>().SetBool("Attacking", true);
+            Avatar.sprite = Attacking;
+            if (MeleeWeapon.activeSelf)
+            {
+                MeleeWeapon.GetComponent<BoxCollider2D>().enabled = true;
+            }
+           // else
+                //Instantiate(ArrowType);
+
             availstamina -= 5;
+        }
+
+        if(hitcount == 0)
+        {
+            GetComponent<Animator>().SetBool("Death", true);
+            Invoke("Death", 5);
+              
+
         }
     }
 
@@ -156,4 +199,12 @@ public class PlayerStats : MonoBehaviour {
 
     }
 
+    void Death()
+    {
+        // Click to restart level
+
+        // Somehow reload level blahblahblah
+        Application.LoadLevel("BasicFunctionality");
+
+    }
 }
