@@ -45,7 +45,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\MessageTrigger.cs" />
+     <Compile Include="Assets\Scripts\AM_ArrowScript.cs" />
+     <Compile Include="Assets\Scripts\AM_MobSpawnerScript.cs" />
+     <Compile Include="Assets\Scripts\AM_NPCScript.cs" />
      <Compile Include="Assets\Scripts\BounceBehaviour.cs" />
      <Compile Include="Assets\Scripts\Camera.cs" />
      <Compile Include="Assets\Scripts\CratePiece.cs" />
