@@ -6,6 +6,10 @@ public class AM_MobSpawnerScript : MonoBehaviour {
     public float delay; // How long before spawning begins
     public float interval = 5.0f; // How frequently to spawn
     public int numToSpawn = 1; // Max number of enemies to spawn
+    public bool isEnabled = false;
+    [Tooltip("Enable to spawn mobs randomly Left/Right of the spawner")]
+    public bool isRandom = false;
+    public float randomRange = 1.5f;
 
     private float sinceLastSpawn;
 	// Use this for initialization
@@ -14,28 +18,64 @@ public class AM_MobSpawnerScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        if (numToSpawn > 0)
+    void Update()
+    {
+        if (isEnabled)
         {
-            if (delay <= 0)
+            if (numToSpawn > 0)
             {
-                sinceLastSpawn += Time.deltaTime;
-                if (sinceLastSpawn >= interval)
+                if (delay < 0)
                 {
-                    numToSpawn--;
-                    sinceLastSpawn = 0;
-                    Instantiate(enemyType, transform.position, transform.rotation);
+                    sinceLastSpawn += Time.deltaTime;
+                    if (sinceLastSpawn >= interval)
+                    {
+                        numToSpawn--;
+                        sinceLastSpawn = 0;
+                        GameObject newEnemy = Instantiate(enemyType, transform.position, transform.rotation) as GameObject;
+                        if (isRandom)
+                        {
+                            Vector3 newPos = newEnemy.transform.position;
+                            newPos.x += Random.Range(-randomRange, randomRange);
+                            newEnemy.transform.position = newPos;
+                        }
+                        newEnemy.GetComponent<AM_NPCScript>().moveSpeed += Random.RandomRange(-.3f, .3f);
+                        newEnemy.GetComponent<AM_NPCScript>().attackRange += Random.RandomRange(-.15f, .15f);
+                        newEnemy.GetComponent<AM_NPCScript>().isActive = true;
+                        newEnemy.GetComponent<AM_NPCScript>().ResetFacing();
+                        newEnemy.GetComponent<Rigidbody2D>().gravityScale = 1;
+                    }
                 }
-            }
-            else
-            {
-                delay -= Time.deltaTime;
-                if (delay <= 0) // Spawn as soon as delay hits 0
+                else
                 {
-                    numToSpawn--;
-                    Instantiate(enemyType, transform.position, transform.rotation);
+                    delay -= Time.deltaTime;
+                    if (delay <= 0) // Spawn as soon as delay hits 0
+                    {
+                        numToSpawn--;
+                        GameObject newEnemy = Instantiate(enemyType, transform.position, transform.rotation) as GameObject;
+                        if (isRandom)
+                        {
+                            Vector3 newPos = newEnemy.transform.position;
+                            newPos.x += Random.Range(-randomRange, randomRange);
+                            newEnemy.transform.position = newPos;
+                        }
+                        newEnemy.GetComponent<AM_NPCScript>().moveSpeed += Random.RandomRange(-.3f, .3f);
+                        newEnemy.GetComponent<AM_NPCScript>().attackRange += Random.RandomRange(-.15f, .15f);
+                        newEnemy.GetComponent<AM_NPCScript>().isActive = true;
+                        newEnemy.GetComponent<AM_NPCScript>().ResetFacing();
+                        newEnemy.GetComponent<Rigidbody2D>().gravityScale = 1;
+                    }
                 }
             }
         }
-	}
+    }
+
+    void OnBecameInvisible()
+    {
+        isEnabled = false;
+    }
+
+    void OnBecameVisible()
+    {
+        isEnabled = true;
+    }
 }
