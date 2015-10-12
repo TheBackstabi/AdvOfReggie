@@ -46,23 +46,17 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraLock.cs" />
-     <Compile Include="Assets\Scripts\FireProjectile.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerCrouch.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerStatUIControls.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\WeaponScripts\EquippedWeapon.cs" />
-     <Compile Include="Assets\Scripts\WeaponStats.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>F:/Coding and Game Engines/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\Scripts\WeaponScripts\FireProjectile.cs" />
+     <Compile Include="Assets\Scripts\WeaponScripts\WeaponStats.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Coding and Game Engines/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>F:/Coding and Game Engines/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>F:/Coding and Game Engines/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>F:/Coding and Game Engines/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
