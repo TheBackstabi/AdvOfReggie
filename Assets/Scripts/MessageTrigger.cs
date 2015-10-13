@@ -5,13 +5,22 @@ public class MessageTrigger : MonoBehaviour
 {
 	public GameObject Message;
 
-	void OnTriggerEnter2D( Collider2D coll )
+	void OnTriggerStay2D( Collider2D coll )
+	{
+		if(coll.tag == "Player")
+		{
+			Message.SetActive(true);
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D coll)
 	{
 		if(coll.tag == "Player")
 		{
 			Message.SetActive(false);
 		}
 	}
+
 
 	// Use this for initialization
 	void Start () {

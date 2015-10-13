@@ -36,6 +36,7 @@ public class PlayerStats : MonoBehaviour {
         RangedWeapon.SetActive(false);
         collision = player.GetComponent<BoxCollider2D>();
         Avatar = player.GetComponent<SpriteRenderer>();
+		Weapon = MeleeWeapon;
         //Weapon.GetComponent<SpriteRenderer>().sprite = MeleeWeapon;\
         //Camera.main.orthograpicSize = 4.2f;
         
@@ -77,14 +78,15 @@ public class PlayerStats : MonoBehaviour {
             //Avatar.sprite = Walking;
             //player.transform.localScale = new Vector3(-1.0f *player.transform.localScale.x , player.transform.localScale.y, player.transform.localScale.z);
            // PlayerLocation.Translate(-0.1f, 0.0f, 0.0f);
+			if (!Facingleft)
+			{
+				player.transform.localScale = new Vector3(transform.localScale.x * -1.0f, transform.localScale.y, transform.localScale.z);
+				Weapon.transform.localScale = new Vector3(Weapon.transform.localScale.x * -1.0f, Weapon.transform.localScale.y, Weapon.transform.localScale.z);
+				// GameObject.Find("Katana").GetComponent<SpriteRenderer>().localToWorldMatrix.MultiplyPoint(new Vector3(-1, 1, 1));
+				// Weapon.transform.Translate(new Vector3(-50, 0, 0));
+			}
             Facingleft = true;
             player.GetComponent<Rigidbody2D>().velocity = new Vector2(-1.8f, player.GetComponent<Rigidbody2D>().velocity.y);
-            if (transform.localScale.x > 0.0f)
-            { player.transform.localScale = new Vector3(transform.localScale.x * -1.0f, transform.localScale.y, transform.localScale.z);
-           // GameObject.Find("Katana").GetComponent<SpriteRenderer>().localToWorldMatrix.MultiplyPoint(new Vector3(-1, 1, 1));
-            Weapon.transform.localScale = new Vector3(Weapon.transform.localScale.x * -1.0f, Weapon.transform.localScale.y, Weapon.transform.localScale.z);
-           // Weapon.transform.Translate(new Vector3(-50, 0, 0));
-            }
 
         }
         else if (Input.GetKey(KeyCode.D) && !isCrouched) //&& GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()))
@@ -92,14 +94,14 @@ public class PlayerStats : MonoBehaviour {
             //GetComponent<Animator>().SetBool("Walking", true);
             //PlayerLocation.Translate(0.1f, 0.0f, 0.0f);
             //Avatar.sprite = Walking;
+			if (Facingleft)
+			{
+				player.transform.localScale = new Vector3(transform.localScale.x * -1.0f, transform.localScale.y, transform.localScale.z);
+				Weapon.transform.localScale = new Vector3(Weapon.transform.localScale.x * -1.0f, Weapon.transform.localScale.y, Weapon.transform.localScale.z);
+				
+			}
             Facingleft = false;
             player.GetComponent<Rigidbody2D>().velocity = new Vector2(1.8f, player.GetComponent<Rigidbody2D>().velocity.y);
-            if (transform.localScale.x < 0.0f)
-            {
-                player.transform.localScale = new Vector3(transform.localScale.x * -1.0f, transform.localScale.y, transform.localScale.z);
-                Weapon.transform.localScale = new Vector3(Weapon.transform.localScale.x * -1.0f, Weapon.transform.localScale.y, Weapon.transform.localScale.z);
-
-            }
         }
         //else if (Input.GetKeyDown(KeyCode.Tab) && availstamina >= 10)
         //{
@@ -173,10 +175,6 @@ public class PlayerStats : MonoBehaviour {
             availstamina -= 5;
         }
 
-		if(MeleeWeapon.GetComponent<BoxCollider2D>().enabled)
-		{
-			MeleeWeapon.GetComponent<BoxCollider2D>().enabled = false;
-		}
         if(hitcount == 0)
         {
             GetComponent<Animator>().SetBool("Death", true);
@@ -185,6 +183,10 @@ public class PlayerStats : MonoBehaviour {
               
 
         }
+		if(MeleeWeapon.GetComponent<BoxCollider2D>().enabled)
+		{
+			MeleeWeapon.GetComponent<BoxCollider2D>().enabled = false;
+		}
     }
 
     void StaminaRegen()

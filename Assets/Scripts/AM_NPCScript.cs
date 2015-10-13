@@ -152,8 +152,8 @@ public class AM_NPCScript : MonoBehaviour {
             // Uncomment once PlayerWeaponScript is done.
             //currHealth -= coll.gameObject.GetComponent<WeaponStats>().damage;
             currHealth -= 1;
-		
-      		audioSources[0].Play();
+		//
+    	//	dioSources[0].Play();
         }
         if (coll.gameObject.tag == "PlayerArrow")
         {
@@ -172,13 +172,13 @@ public class AM_NPCScript : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D other)
     {
-		//if (other.gameObject.tag == "Player")
+		if (other.gameObject.tag == "Player")
 		{
 			// Uncomment once PlayerWeaponScript is done.
 			//currHealth -= other.gameObject.GetComponent<WeaponStats>().damage;
-		//	currHealth -= 1;
+			currHealth -= 1;
 			
-		//	audioSources[0].Play();
+			audioSources[0].Play();
 		}
         if (other.gameObject.tag == "Platform")
         {

@@ -20,19 +20,19 @@ public class EquippedWeapon : MonoBehaviour {
         {
             if (wielder.GetComponent<PlayerStats>().isCrouched)
             {
-                transform.position = new Vector3(wielder.transform.position.x + 0.8f, wielder.transform.position.y, wielder.transform.position.z);
+                transform.position = new Vector3(wielder.transform.position.x + 1.1f, wielder.transform.position.y + 1.5f, wielder.transform.position.z);
             }
             else
-                transform.position = new Vector3(wielder.transform.position.x + 0.8f, wielder.transform.position.y, wielder.transform.position.z);
+                transform.position = new Vector3(wielder.transform.position.x + 1.1f, wielder.transform.position.y + 1.5f, wielder.transform.position.z);
         }
         else
         {
             if (wielder.GetComponent<PlayerStats>().isCrouched)
             {
-                transform.position = new Vector3(wielder.transform.position.x - 0.8f, wielder.transform.position.y, wielder.transform.position.z);
+                transform.position = new Vector3(wielder.transform.position.x - 1.1f, wielder.transform.position.y + 1.3f, wielder.transform.position.z);
             }
             else
-                transform.position = new Vector3(wielder.transform.position.x - 0.8f, wielder.transform.position.y, wielder.transform.position.z);
+                transform.position = new Vector3(wielder.transform.position.x - 1.1f, wielder.transform.position.y + 1.3f, wielder.transform.position.z);
         }
 
 	}
