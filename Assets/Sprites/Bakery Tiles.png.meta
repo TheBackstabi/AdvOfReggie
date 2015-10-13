@@ -1,0 +1,738 @@
+fileFormatVersion: 2
+guid: 5f6bfeaf196ce44408ea12e5018d213b
+timeCreated: 1444265099
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Bakery Tiles_0
+    21300002: Bakery Tiles_1
+    21300004: Bakery Tiles_2
+    21300006: Bakery Tiles_3
+    21300008: Bakery Tiles_4
+    21300010: Bakery Tiles_6
+    21300012: Bakery Tiles_7
+    21300014: Bakery Tiles_8
+    21300016: Bakery Tiles_9
+    21300018: Bakery Tiles_10
+    21300020: Bakery Tiles_11
+    21300022: Bakery Tiles_12
+    21300024: Bakery Tiles_13
+    21300026: Bakery Tiles_14
+    21300028: Bakery Tiles_15
+    21300030: Bakery Tiles_16
+    21300032: Bakery Tiles_17
+    21300034: Bakery Tiles_18
+    21300036: Bakery Tiles_19
+    21300038: Bakery Tiles_20
+    21300040: Bakery Tiles_21
+    21300042: Bakery Tiles_22
+    21300044: Bakery Tiles_23
+    21300046: Bakery Tiles_24
+    21300048: Bakery Tiles_25
+    21300050: Bakery Tiles_26
+    21300052: Bakery Tiles_27
+    21300054: Bakery Tiles_28
+    21300056: Bakery Tiles_29
+    21300058: Bakery Tiles_30
+    21300060: Bakery Tiles_31
+    21300062: Bakery Tiles_32
+    21300064: Bakery Tiles_33
+    21300066: Bakery Tiles_34
+    21300068: Bakery Tiles_35
+    21300070: Bakery Tiles_36
+    21300072: Bakery Tiles_37
+    21300074: Bakery Tiles_38
+    21300076: Bakery Tiles_39
+    21300078: Bakery Tiles_40
+    21300080: Bakery Tiles_41
+    21300082: Bakery Tiles_42
+    21300084: Bakery Tiles_43
+    21300086: Bakery Tiles_44
+    21300088: Bakery Tiles_45
+    21300090: Bakery Tiles_46
+    21300092: Bakery Tiles_47
+    21300094: Bakery Tiles_48
+    21300096: Bakery Tiles_49
+    21300098: Bakery Tiles_50
+    21300100: Bakery Tiles_51
+    21300102: Bakery Tiles_52
+    21300104: Bakery Tiles_53
+    21300106: Bakery Tiles_54
+    21300108: Bakery Tiles_55
+    21300110: Bakery Tiles_56
+    21300112: Bakery Tiles_57
+    21300114: Bakery Tiles_58
+    21300116: Bakery Tiles_59
+    21300118: Bakery Tiles_60
+    21300120: Bakery Tiles_61
+    21300122: Bakery Tiles_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Bakery Tiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 185
+        width: 59
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_2
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 186
+        width: 58
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_3
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 185
+        width: 58
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_4
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 186
+        width: 58
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_6
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 117
+        width: 33
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_7
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 117
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_8
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 162
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_9
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 162
+        width: 58
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_10
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 153
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_11
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 150
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_12
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 166
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_13
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 168
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_14
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 168
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_15
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 142
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_16
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 142
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_17
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 146
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_18
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 141
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_19
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 144
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_20
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 145
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_21
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 130
+        width: 64
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_22
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 117
+        width: 60
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_23
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 118
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_24
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 116
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_25
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 129
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_26
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 128
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_27
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 122
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_28
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 113
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_29
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 111
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_30
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 111
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_31
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 85
+        width: 65
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_32
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 49
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_33
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 104
+        width: 64
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_34
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 12
+        width: 28
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_35
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 91
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_36
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 90
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_37
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 92
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_38
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 91
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_39
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 92
+        width: 64
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_40
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 88
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_41
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 80
+        width: 64
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_42
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 57
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_43
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 58
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_44
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 58
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_45
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 59
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_46
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_47
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_48
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 36
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_49
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 12
+        width: 64
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_50
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 12
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_51
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 43
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_52
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 19
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_53
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 19
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_54
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 31
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_55
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 19
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_56
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 15
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_57
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 4
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_58
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 5
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_59
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 15
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bakery Tiles_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 149
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

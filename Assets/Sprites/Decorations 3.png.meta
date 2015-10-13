@@ -1,0 +1,661 @@
+fileFormatVersion: 2
+guid: 2b7cc3e25024b044bb00c73a5736e6c4
+timeCreated: 1444265421
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Decorations 3_12
+    21300002: Decorations 3_13
+    21300004: Decorations 3_14
+    21300006: Decorations 3_15
+    21300008: Decorations 3_16
+    21300010: Decorations 3_17
+    21300012: Decorations 3_18
+    21300014: Decorations 3_19
+    21300016: Decorations 3_20
+    21300018: Decorations 3_21
+    21300020: Decorations 3_22
+    21300022: Decorations 3_23
+    21300024: Decorations 3_24
+    21300026: Decorations 3_25
+    21300028: Decorations 3_26
+    21300030: Decorations 3_27
+    21300032: Decorations 3_28
+    21300034: Decorations 3_29
+    21300036: Decorations 3_30
+    21300038: Decorations 3_31
+    21300040: Decorations 3_32
+    21300042: Decorations 3_33
+    21300044: Decorations 3_34
+    21300046: Decorations 3_35
+    21300048: Decorations 3_36
+    21300050: Decorations 3_37
+    21300052: Decorations 3_38
+    21300054: Decorations 3_39
+    21300056: Decorations 3_40
+    21300058: Decorations 3_41
+    21300060: Decorations 3_42
+    21300062: Decorations 3_43
+    21300064: Decorations 3_44
+    21300066: Decorations 3_45
+    21300068: Decorations 3_46
+    21300070: Decorations 3_47
+    21300072: Decorations 3_48
+    21300074: Decorations 3_49
+    21300076: Decorations 3_50
+    21300078: Decorations 3_51
+    21300080: Decorations 3_52
+    21300082: Decorations 3_53
+    21300084: Decorations 3_54
+    21300086: Decorations 3_55
+    21300088: Decorations 3_56
+    21300090: Decorations 3_57
+    21300092: Decorations 3_58
+    21300094: Decorations 3_59
+    21300096: Decorations 3_60
+    21300098: Decorations 3_61
+    21300100: Decorations 3_62
+    21300102: Decorations 3_63
+    21300104: Decorations 3_64
+    21300106: Decorations 3_65
+    21300108: Decorations 3_66
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Decorations 3_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 157
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_13
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 149
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_14
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 150
+        width: 20
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_15
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 150
+        width: 20
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 150
+        width: 21
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_17
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 150
+        width: 19
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_18
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 150
+        width: 19
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_19
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 150
+        width: 19
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_20
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 150
+        width: 20
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_21
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 149
+        width: 21
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_22
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 150
+        width: 20
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_23
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 149
+        width: 21
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_24
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 150
+        width: 20
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_25
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 149
+        width: 21
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_26
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 149
+        width: 20
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_27
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 148
+        width: 21
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_28
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 121
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_29
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 121
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_30
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 106
+        width: 65
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_31
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 107
+        width: 65
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_32
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 107
+        width: 65
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_33
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 107
+        width: 65
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_34
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 107
+        width: 65
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_35
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 106
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_36
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 107
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_37
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 107
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_38
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 107
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_39
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 96
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_40
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 96
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_41
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 71
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_42
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 72
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_43
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 72
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_44
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 72
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_45
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 72
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_46
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 62
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_47
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 56
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_48
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 56
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_49
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 35
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_50
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 35
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_51
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 63
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_52
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 59
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_53
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 35
+        width: 14
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_54
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 62
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_55
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 62
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_56
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 31
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_57
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 37
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_58
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 24
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_59
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 28
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_60
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 43
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_61
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 22
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_62
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 22
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_63
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 3
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_64
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 3
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_65
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 24
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Decorations 3_66
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 4
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

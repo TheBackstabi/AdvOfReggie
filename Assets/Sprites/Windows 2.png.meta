@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: 5b6341c889233ac4eae7cd83366e1017
+timeCreated: 1444266805
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Windows 2_3
+    21300002: Windows 2_4
+    21300004: Windows 2_5
+    21300006: Windows 2_6
+    21300008: Windows 2_7
+    21300010: Windows 2_8
+    21300012: Windows 2_9
+    21300014: Windows 2_10
+    21300016: Windows 2_11
+    21300018: Windows 2_12
+    21300020: Windows 2_13
+    21300022: Windows 2_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Windows 2_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 300
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Windows 2_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 300
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Windows 2_5
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 300
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Windows 2_6
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 300
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Windows 2_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 236
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Windows 2_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 236
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Windows 2_9
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 236
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Windows 2_10
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 236
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Windows 2_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 100
+        width: 64
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Windows 2_12
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 114
+        width: 36
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Windows 2_13
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 148
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Windows 2_14
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 148
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

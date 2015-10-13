@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 522b9bc4835c8894e90f2121b313ad17
-timeCreated: 1444257831
+timeCreated: 1444265125
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -64,17 +64,7 @@ TextureImporter:
         width: 71
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: couch_1
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 96
-        width: 4
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: couch_2
       rect:
@@ -85,36 +75,6 @@ TextureImporter:
         height: 74
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: couch_3
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 3
-        width: 24
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: couch_4
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 31
-        width: 8
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: couch_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 6
-        width: 39
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

@@ -1,0 +1,1453 @@
+fileFormatVersion: 2
+guid: e647aee531eff85439d226b1ec7d798f
+timeCreated: 1444270764
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Buildings Tiles_0
+    21300002: Buildings Tiles_1
+    21300004: Buildings Tiles_2
+    21300006: Buildings Tiles_3
+    21300008: Buildings Tiles_4
+    21300010: Buildings Tiles_5
+    21300012: Buildings Tiles_6
+    21300014: Buildings Tiles_7
+    21300016: Buildings Tiles_8
+    21300018: Buildings Tiles_9
+    21300020: Buildings Tiles_10
+    21300022: Buildings Tiles_11
+    21300024: Buildings Tiles_12
+    21300026: Buildings Tiles_13
+    21300028: Buildings Tiles_14
+    21300030: Buildings Tiles_15
+    21300032: Buildings Tiles_16
+    21300034: Buildings Tiles_17
+    21300036: Buildings Tiles_18
+    21300038: Buildings Tiles_19
+    21300040: Buildings Tiles_20
+    21300042: Buildings Tiles_21
+    21300044: Buildings Tiles_22
+    21300046: Buildings Tiles_23
+    21300048: Buildings Tiles_24
+    21300050: Buildings Tiles_25
+    21300052: Buildings Tiles_26
+    21300054: Buildings Tiles_27
+    21300056: Buildings Tiles_28
+    21300058: Buildings Tiles_29
+    21300060: Buildings Tiles_30
+    21300062: Buildings Tiles_31
+    21300064: Buildings Tiles_32
+    21300066: Buildings Tiles_33
+    21300068: Buildings Tiles_34
+    21300070: Buildings Tiles_35
+    21300072: Buildings Tiles_36
+    21300074: Buildings Tiles_37
+    21300076: Buildings Tiles_38
+    21300078: Buildings Tiles_39
+    21300080: Buildings Tiles_40
+    21300082: Buildings Tiles_41
+    21300084: Buildings Tiles_42
+    21300086: Buildings Tiles_43
+    21300088: Buildings Tiles_44
+    21300090: Buildings Tiles_45
+    21300092: Buildings Tiles_46
+    21300094: Buildings Tiles_47
+    21300096: Buildings Tiles_48
+    21300098: Buildings Tiles_49
+    21300100: Buildings Tiles_50
+    21300102: Buildings Tiles_51
+    21300104: Buildings Tiles_52
+    21300106: Buildings Tiles_53
+    21300108: Buildings Tiles_54
+    21300110: Buildings Tiles_55
+    21300112: Buildings Tiles_56
+    21300114: Buildings Tiles_57
+    21300116: Buildings Tiles_58
+    21300118: Buildings Tiles_59
+    21300120: Buildings Tiles_60
+    21300122: Buildings Tiles_61
+    21300124: Buildings Tiles_62
+    21300126: Buildings Tiles_63
+    21300128: Buildings Tiles_64
+    21300130: Buildings Tiles_65
+    21300132: Buildings Tiles_66
+    21300134: Buildings Tiles_67
+    21300136: Buildings Tiles_68
+    21300138: Buildings Tiles_69
+    21300140: Buildings Tiles_70
+    21300142: Buildings Tiles_71
+    21300144: Buildings Tiles_72
+    21300146: Buildings Tiles_73
+    21300148: Buildings Tiles_74
+    21300150: Buildings Tiles_75
+    21300152: Buildings Tiles_76
+    21300154: Buildings Tiles_77
+    21300156: Buildings Tiles_78
+    21300158: Buildings Tiles_79
+    21300160: Buildings Tiles_80
+    21300162: Buildings Tiles_81
+    21300164: Buildings Tiles_82
+    21300166: Buildings Tiles_83
+    21300168: Buildings Tiles_84
+    21300170: Buildings Tiles_85
+    21300172: Buildings Tiles_86
+    21300174: Buildings Tiles_87
+    21300176: Buildings Tiles_88
+    21300178: Buildings Tiles_89
+    21300180: Buildings Tiles_90
+    21300182: Buildings Tiles_91
+    21300184: Buildings Tiles_92
+    21300186: Buildings Tiles_93
+    21300188: Buildings Tiles_94
+    21300190: Buildings Tiles_95
+    21300192: Buildings Tiles_96
+    21300194: Buildings Tiles_97
+    21300196: Buildings Tiles_98
+    21300198: Buildings Tiles_99
+    21300200: Buildings Tiles_100
+    21300202: Buildings Tiles_101
+    21300204: Buildings Tiles_102
+    21300206: Buildings Tiles_103
+    21300208: Buildings Tiles_104
+    21300210: Buildings Tiles_105
+    21300212: Buildings Tiles_106
+    21300214: Buildings Tiles_107
+    21300216: Buildings Tiles_108
+    21300218: Buildings Tiles_109
+    21300220: Buildings Tiles_110
+    21300222: Buildings Tiles_111
+    21300224: Buildings Tiles_112
+    21300226: Buildings Tiles_113
+    21300228: Buildings Tiles_114
+    21300230: Buildings Tiles_115
+    21300232: Buildings Tiles_116
+    21300234: Buildings Tiles_117
+    21300236: Buildings Tiles_118
+    21300238: Buildings Tiles_119
+    21300240: Buildings Tiles_120
+    21300242: Buildings Tiles_121
+    21300244: Buildings Tiles_122
+    21300246: Buildings Tiles_123
+    21300248: Buildings Tiles_124
+    21300250: Buildings Tiles_125
+    21300252: Buildings Tiles_126
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Buildings Tiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1674
+        width: 192
+        height: 150
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_1
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1761
+        width: 96
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1717
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_4
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1684
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1718
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_6
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1674
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_7
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1678
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1628
+        width: 96
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1628
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1628
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_11
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1643
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_12
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1630
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_13
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1624
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_14
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1631
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1611
+        width: 96
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_17
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1585
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_18
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1617
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_19
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1541
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_20
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1568
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_21
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1569
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_22
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1543
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_23
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1569
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_24
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1440
+        width: 100
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_26
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1371
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_27
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1372
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_28
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1371
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_29
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1349
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_30
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1349
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_31
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1341
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_32
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1342
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_33
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1341
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_34
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1295
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_35
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1292
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_36
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1310
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_37
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1216
+        width: 39
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_38
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1216
+        width: 79
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_39
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1216
+        width: 79
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_40
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1231
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_41
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1231
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_42
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1222
+        width: 30
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 64
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_45
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 626
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_46
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 596
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 518
+        width: 79
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_49
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 517
+        width: 79
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_50
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 569
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_51
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 512
+        width: 80
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_53
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 515
+        width: 9
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_54
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 515
+        width: 7
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_55
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 521
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_56
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 521
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_63
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 492
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_64
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 492
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_66
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 325
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_67
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 332
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_68
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 333
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_69
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 333
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_74
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 159
+        width: 105
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_75
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 112
+        height: 153
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_76
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 64
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_77
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 64
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_78
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 50
+        width: 224
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_79
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_81
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 96
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_82
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_83
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_84
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_85
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_86
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_87
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_89
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_90
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_91
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_92
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_93
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_94
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_95
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_96
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_98
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 385
+        width: 96
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_99
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 374
+        width: 96
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_100
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 340
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_70
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_73
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_80
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_101
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1428
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_52
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1466
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_57
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1466
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_58
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1428
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_59
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1428
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_60
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1364
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1364
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_62
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1375
+        width: 47
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_102
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1408
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_103
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1508
+        width: 64
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1492
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1556
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_106
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1556
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_107
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1586
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_108
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1594
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_109
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1586
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_110
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1569
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_111
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1568
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_112
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1593
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_113
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1592
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_114
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1563
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_115
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1622
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_116
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1622
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_117
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1622
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_44
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 960
+        width: 192
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_118
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1146
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_119
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 864
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_120
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 864
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_121
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 768
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_122
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 768
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_123
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 672
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_25
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1408
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_47
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1408
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_71
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1440
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 685
+        width: 56
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_72
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 767
+        width: 27
+        height: 97
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_124
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 773
+        width: 34
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_125
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 788
+        width: 31
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buildings Tiles_126
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 788
+        width: 29
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
