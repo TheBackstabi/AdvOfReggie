@@ -147,15 +147,15 @@ public class AM_NPCScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == "PlayerWeapon")
+        if (coll.gameObject.tag == "Player")
         {
             // Uncomment once PlayerWeaponScript is done.
-            //currHealth -= coll.gameObject.GetComponent<PlayerWeaponScript>().GetDamageVal();
+            //currHealth -= coll.gameObject.GetComponent<WeaponStats>().damage;
             currHealth -= 1;
-
-            audioSources[0].Play();
+		
+      		audioSources[0].Play();
         }
-        else if (coll.gameObject.tag == "PlayerArrow")
+        if (coll.gameObject.tag == "PlayerArrow")
         {
             currHealth -= coll.gameObject.GetComponent<AM_ArrowScript>().GetDamageVal();
             audioSources[0].Play();
@@ -172,6 +172,14 @@ public class AM_NPCScript : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D other)
     {
+		//if (other.gameObject.tag == "Player")
+		{
+			// Uncomment once PlayerWeaponScript is done.
+			//currHealth -= other.gameObject.GetComponent<WeaponStats>().damage;
+		//	currHealth -= 1;
+			
+		//	audioSources[0].Play();
+		}
         if (other.gameObject.tag == "Platform")
         {
             Vector2 vel = GetComponent<Rigidbody2D>().velocity;
@@ -194,13 +202,10 @@ public class AM_NPCScript : MonoBehaviour {
 
     public void ResetFacing()
     {
-        prevDir = 0;
         if (Reggie.transform.position.x > transform.position.x)
         {
             moveDir = 1;
-            Vector3 x = transform.localScale;
-            x.x = -x.x;
-            transform.localScale = x;
+			prevDir = -1;
         }
         else
         {

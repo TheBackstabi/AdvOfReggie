@@ -14,7 +14,7 @@ public class PlayerStatUIControls : MonoBehaviour {
     PlayerStats player;
 
     private int healthwidth = 230;
-    private int healthcount;
+    public int healthcount;
     private int staminacount;
 
 	// Use this for initialization
@@ -30,11 +30,14 @@ public class PlayerStatUIControls : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
+        healthcount = player.hitcount;
         stamina.value = player.availstamina;
-        if(stamina.value == 0)
+       // if(stamina.value == 0)
            // stamina.
-        if(healthcount != player.hitcount)
-        health.rectTransform.sizeDelta = new Vector2(healthwidth, health.rectTransform.sizeDelta.y);
+        //if(healthcount != player.hitcount)
+        //health.
+        health.rectTransform.sizeDelta = new Vector2(healthwidth * healthcount, health.rectTransform.sizeDelta.y);
+        
 	    
 	}
 }

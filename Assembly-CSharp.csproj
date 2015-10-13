@@ -45,31 +45,30 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\LevelChanger.cs" />
      <Compile Include="Assets\Scripts\AM_ArrowScript.cs" />
+     <Compile Include="Assets\Scripts\AM_IceBossScript.cs" />
      <Compile Include="Assets\Scripts\AM_MobSpawnerScript.cs" />
      <Compile Include="Assets\Scripts\AM_NPCScript.cs" />
      <Compile Include="Assets\Scripts\BounceBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Camera.cs" />
+     <Compile Include="Assets\Scripts\CameraLock.cs" />
      <Compile Include="Assets\Scripts\CratePiece.cs" />
+     <Compile Include="Assets\Scripts\EquippedWeapon.cs" />
      <Compile Include="Assets\Scripts\FallingBehaviour.cs" />
      <Compile Include="Assets\Scripts\MessageTrigger.cs" />
      <Compile Include="Assets\Scripts\MusicTransitionScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerCrouch.cs" />
      <Compile Include="Assets\Scripts\PlayerStatUIControls.cs" />
      <Compile Include="Assets\Scripts\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\ToggleBlock.cs" />
      <Compile Include="Assets\Scripts\ToggleCollision.cs" />
      <Compile Include="Assets\Scripts\Trigger.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>E:/Programs/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\Scripts\WeaponStats.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Programs/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>E:/Programs/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>E:/Programs/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>E:/Programs/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
