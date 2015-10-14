@@ -161,7 +161,7 @@ public class PlayerStats : MonoBehaviour {
         //    canJump = true;
         //}
 
-        Invoke("StaminaRegen", 0);
+        StaminaRegen();
 
         if(Input.GetMouseButtonDown(0))
         {            Avatar.sprite = Attacking;
