@@ -6,6 +6,7 @@ public class AM_ArrowScript : MonoBehaviour {
     public Transform target = null;
 
     private int currentDamage = 0;
+
 	// Use this for initialization
 	void Start () {
         if (tag == "PlayerWeapon")
@@ -22,27 +23,30 @@ public class AM_ArrowScript : MonoBehaviour {
                     transform.Rotate(0.0f, 0.0f, 90.0f);
                 else if (target.position.y < transform.position.y)
                     transform.Rotate(0.0f, 0.0f, 180.0f);
-                GetComponent<Rigidbody2D>().AddForce(fireStrength * (target.position - transform.position));
+
+                GetComponent<Rigidbody2D>().AddForce(fireStrength * Vector3.Normalize((target.position - transform.position)));
             }
         }
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        // Nothing to put here
+        if (GetComponent<SpriteRenderer>().enabled == false && GetComponent<AudioSource>().isPlaying == false)
+            Destroy(gameObject);
 	}
-
-    void OnBecameInvisible()
-    {
-        Destroy(gameObject);
-    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (gameObject.tag == "EnemyArrow" && other.gameObject.tag == "Player")
+        {
             GetComponent<AudioSource>().Play();
+            GetComponent<SpriteRenderer>().enabled = false;
+        }
         else if (gameObject.tag == "PlayerWeapon" && other.gameObject.tag == "Enemy")
+        {
             GetComponent<AudioSource>().Play();
+            GetComponent<SpriteRenderer>().enabled = false;
+        }
     }
 
     public void SetDamageVal(int _damage)
