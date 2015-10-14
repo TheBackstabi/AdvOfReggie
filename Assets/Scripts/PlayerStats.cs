@@ -67,7 +67,7 @@ public class PlayerStats : MonoBehaviour {
         }
         if (Input.GetKey(KeyCode.S))
         {
-            //GetComponent<Animator>().SetBool("Crouch", true);
+            //GetComponent<Animator>().SetBool("crouch", true);
             Avatar.sprite = Crouching;
             if (!isCrouched)
             { 
@@ -107,39 +107,42 @@ public class PlayerStats : MonoBehaviour {
             Facingleft = false;
             player.GetComponent<Rigidbody2D>().velocity = new Vector2(1.8f, player.GetComponent<Rigidbody2D>().velocity.y);
         }
-        //else if (Input.GetKeyDown(KeyCode.Tab) && availstamina >= 10)
-        //{
-        //    CancelInvoke();
-        //    if (!WeaponSelected)
-        //    {
-        //        RangedWeapon.SetActive(true);
-        //        RangedWeapon.transform.position = MeleeWeapon.transform.position;
-        //        RangedWeapon.transform.localScale = new Vector3(RangedWeapon.transform.localScale.x * -1.0f, RangedWeapon.transform.localScale.y, RangedWeapon.transform.localScale.z);
-        //        MeleeWeapon.SetActive(false);
-        //        Weapon = RangedWeapon;
-        //    }
-        //    else
-        //    {
-        //        Weapon = MeleeWeapon;
-        //        RangedWeapon.SetActive(false);
-        //        MeleeWeapon.SetActive(true);
+        else if (Input.GetKeyDown(KeyCode.Tab) && availstamina >= 10)
+        {
+            CancelInvoke();
+            if (!WeaponSelected)
+            {
+                RangedWeapon.SetActive(true);
+                RangedWeapon.transform.position = MeleeWeapon.transform.position;
+                RangedWeapon.transform.localScale = new Vector3(RangedWeapon.transform.localScale.x * -1.0f, RangedWeapon.transform.localScale.y, RangedWeapon.transform.localScale.z);
+                MeleeWeapon.SetActive(false);
+                Weapon = RangedWeapon;
+            }
+            else
+            {
+                Weapon = MeleeWeapon;
+                RangedWeapon.SetActive(false);
+                MeleeWeapon.SetActive(true);
 
 
-        //    }
-        //    WeaponSelected = !WeaponSelected;
-        //    availstamina -= 10;
-        //}
+            }
+            WeaponSelected = !WeaponSelected;
+            availstamina -= 10;
+        }
         else
         {
-            //GetComponent<Animator>().SetBool("Walking", false);
-            //GetComponent<Animator>().SetBool("Crouch", false);
-           Avatar.sprite = Idle;
+            GetComponent<Animator>().SetBool("Walking", false);
+            GetComponent<Animator>().SetBool("Crouch", false);
+            if (GetComponent<Rigidbody2D>().velocity.y > 0)
+                Avatar.sprite = Jumping;
+            else
+                Avatar.sprite = Idle;
             isCrouched = false;
         }
 
         if (Input.GetKeyDown(KeyCode.W) && /*canJump &&*/ availstamina >= 15 /*&& GroundCheck.GetComponent<BoxCollider2D>().IsTouchingLayers(15) */&& GetComponent<Rigidbody2D>().velocity.y == 0)
         {
-            //Avatar.sprite = Jumping;
+            Avatar.sprite = Jumping;
             //canJump = false;
             CancelInvoke();
             player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 500));
@@ -155,8 +158,10 @@ public class PlayerStats : MonoBehaviour {
         Invoke("StaminaRegen", 0);
 
         if(Input.GetMouseButtonDown(0))
-        {            //Avatar.sprite = Attacking;
+        {            Avatar.sprite = Attacking;
             availstamina -= 5;
+            Weapon.transform.localRotation.Set(Weapon.transform.localRotation.x, Weapon.transform.localRotation.y + 30.5f, Weapon.transform.localRotation.z, Weapon.transform.localRotation.w);
+               // GetComponent<Animator>().SetBool("Attacking", true);
             if(MeleeWeapon.activeSelf)
             {
                 MeleeWeapon.GetComponent<BoxCollider2D>().enabled = true;                
@@ -167,7 +172,7 @@ public class PlayerStats : MonoBehaviour {
         if (Input.GetMouseButtonDown(1))
         {
             //GetComponent<Animator>().SetBool("Attacking", true);
-           // Avatar.sprite = Attacking;
+            Avatar.sprite = Attacking;
             if (MeleeWeapon.activeSelf)
             {
                 MeleeWeapon.GetComponent<BoxCollider2D>().enabled = true;
@@ -199,8 +204,8 @@ public class PlayerStats : MonoBehaviour {
 
     void OnCollision2DEnter(Collider2D other)
     {
-        if(other.gameObject.tag == "Jumpable")
-            player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 600));
+        //if(other.gameObject.tag == "Jumpable")
+        //    player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 600));
         if (other.gameObject.tag == "Hazardous")
             hitcount--;
 
