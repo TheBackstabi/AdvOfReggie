@@ -230,4 +230,9 @@ public class AM_NPCScript : MonoBehaviour {
     {
         transform.Translate(0.0f, -1.0f, 0.0f);
     }
+
+    public void TakeDamage(int _damage)
+    {
+        currHealth -= _damage;
+    }
 }
