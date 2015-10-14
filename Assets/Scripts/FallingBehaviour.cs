@@ -17,15 +17,19 @@ public class FallingBehaviour : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D coll)
 	{
-		//if(coll.collider.tag == "PlayerWeapon")
+		if(coll.collider.tag == "PlayerWeapon")
 		{
-			GetComponent<Rigidbody2D>().gravityScale = 7.0f;
+			GetComponent<Rigidbody2D>().mass = 8.0f;
+			GetComponent<Rigidbody2D>().gravityScale = 8.0f;
 			//GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -600.0f));
 		}
 		if(coll.collider.tag == "Platform")
 		{
-			GetComponent<Rigidbody2D>().gravityScale = 0.0f;
-			GetComponent<BoxCollider2D>().enabled = false;
+			if(coll.collider.name == "Ground")
+			{
+				GetComponent<Rigidbody2D>().gravityScale = 0.0f;
+				GetComponent<BoxCollider2D>().enabled = false;
+			}
 		}
 	}
 }
