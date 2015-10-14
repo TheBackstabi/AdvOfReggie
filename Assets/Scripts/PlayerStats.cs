@@ -107,46 +107,52 @@ public class PlayerStats : MonoBehaviour {
             Facingleft = false;
             player.GetComponent<Rigidbody2D>().velocity = new Vector2(1.8f, player.GetComponent<Rigidbody2D>().velocity.y);
         }
-        else if (Input.GetKeyDown(KeyCode.Tab) && availstamina >= 10)
-        {
-            CancelInvoke();
-            if (!WeaponSelected)
-            {
-                RangedWeapon.SetActive(true);
-                RangedWeapon.transform.position = MeleeWeapon.transform.position;
-                RangedWeapon.transform.localScale = new Vector3(RangedWeapon.transform.localScale.x * -1.0f, RangedWeapon.transform.localScale.y, RangedWeapon.transform.localScale.z);
-                MeleeWeapon.SetActive(false);
-                Weapon = RangedWeapon;
-            }
-            else
-            {
-                Weapon = MeleeWeapon;
-                RangedWeapon.SetActive(false);
-                MeleeWeapon.SetActive(true);
+        //else if (Input.GetKeyDown(KeyCode.Tab) && availstamina >= 10)
+        //{
+        //    CancelInvoke();
+        //    if (!WeaponSelected)
+        //    {
+        //        RangedWeapon.SetActive(true);
+        //        RangedWeapon.transform.position = MeleeWeapon.transform.position;
+        //        RangedWeapon.transform.localScale = new Vector3(RangedWeapon.transform.localScale.x * -1.0f, RangedWeapon.transform.localScale.y, RangedWeapon.transform.localScale.z);
+        //        MeleeWeapon.SetActive(false);
+        //        Weapon = RangedWeapon;
+        //    }
+        //    else
+        //    {
+        //        Weapon = MeleeWeapon;
+        //        RangedWeapon.SetActive(false);
+        //        MeleeWeapon.SetActive(true);
 
 
-            }
-            WeaponSelected = !WeaponSelected;
-            availstamina -= 10;
-        }
+        //    }
+        //    WeaponSelected = !WeaponSelected;
+        //    availstamina -= 10;
+        //}
         else
         {
             GetComponent<Animator>().SetBool("Walking", false);
             GetComponent<Animator>().SetBool("Crouch", false);
-            if (GetComponent<Rigidbody2D>().velocity.y > 0)
+            if (GetComponent<Rigidbody2D>().velocity.y != 0)
                 Avatar.sprite = Jumping;
             else
                 Avatar.sprite = Idle;
             isCrouched = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.W) && /*canJump &&*/ availstamina >= 15 /*&& GroundCheck.GetComponent<BoxCollider2D>().IsTouchingLayers(15) */&& GetComponent<Rigidbody2D>().velocity.y == 0)
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)) /*canJump &&*/  /*&& GroundCheck.GetComponent<BoxCollider2D>().IsTouchingLayers(15) */
         {
-            Avatar.sprite = Jumping;
-            //canJump = false;
-            CancelInvoke();
-            player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 500));
-            availstamina -= 15;
+            if(availstamina >= 15)
+            {
+                if (GetComponent<Rigidbody2D>().velocity.y == 0)
+                {
+                    Avatar.sprite = Jumping;
+                    //canJump = false;
+                    CancelInvoke();
+                    player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 500));
+                    availstamina -= 15;
+                }
+            }
             
         }
 
