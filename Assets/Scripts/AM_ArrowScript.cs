@@ -9,7 +9,7 @@ public class AM_ArrowScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        if (tag == "PlayerWeapon")
+        if (gameObject.tag == "PlayerWeapon")
         {
             // Player stuff
         }
@@ -41,10 +41,17 @@ public class AM_ArrowScript : MonoBehaviour {
         {
             GetComponent<AudioSource>().Play();
             GetComponent<SpriteRenderer>().enabled = false;
+            other.GetComponent<PlayerStats>().hitcount--;
         }
         else if (gameObject.tag == "PlayerWeapon" && other.gameObject.tag == "Enemy")
         {
             GetComponent<AudioSource>().Play();
+            GetComponent<SpriteRenderer>().enabled = false;
+            other.GetComponent<AM_NPCScript>().TakeDamage(currentDamage);
+        }
+        else if (gameObject.tag == "EnemyArrow" && other.gameObject.tag == "PlayerWeapon")
+        {
+            // New audio source here
             GetComponent<SpriteRenderer>().enabled = false;
         }
     }
