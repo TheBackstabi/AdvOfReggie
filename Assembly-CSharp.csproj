@@ -45,7 +45,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\LevelChanger.cs" />
      <Compile Include="Assets\Scripts\AM_ArrowScript.cs" />
      <Compile Include="Assets\Scripts\AM_IceBossScript.cs" />
      <Compile Include="Assets\Scripts\AM_MobSpawnerScript.cs" />
@@ -55,6 +54,7 @@
      <Compile Include="Assets\Scripts\CratePiece.cs" />
      <Compile Include="Assets\Scripts\EquippedWeapon.cs" />
      <Compile Include="Assets\Scripts\FallingBehaviour.cs" />
+     <Compile Include="Assets\Scripts\LevelChanger.cs" />
      <Compile Include="Assets\Scripts\MessageTrigger.cs" />
      <Compile Include="Assets\Scripts\MusicTransitionScript.cs" />
      <Compile Include="Assets\Scripts\PlayerCrouch.cs" />
