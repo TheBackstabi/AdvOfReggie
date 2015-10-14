@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\LevelChanger.cs" />
      <Compile Include="Assets\Scripts\MessageTrigger.cs" />
      <Compile Include="Assets\Scripts\MusicTransitionScript.cs" />
+     <Compile Include="Assets\Scripts\Platforms.cs" />
      <Compile Include="Assets\Scripts\PlayerCrouch.cs" />
      <Compile Include="Assets\Scripts\PlayerStatUIControls.cs" />
      <Compile Include="Assets\Scripts\PlayerStats.cs" />
