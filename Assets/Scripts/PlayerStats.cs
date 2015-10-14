@@ -61,6 +61,10 @@ public class PlayerStats : MonoBehaviour {
 
     void FixedUpdate()
     {
+        if (MeleeWeapon.GetComponent<BoxCollider2D>().enabled)
+        {
+            MeleeWeapon.GetComponent<BoxCollider2D>().enabled = false;
+        }
         if (Input.GetKey(KeyCode.S))
         {
             //GetComponent<Animator>().SetBool("Crouch", true);
@@ -151,8 +155,7 @@ public class PlayerStats : MonoBehaviour {
         Invoke("StaminaRegen", 0);
 
         if(Input.GetMouseButtonDown(0))
-        {
-            //Avatar.sprite = Attacking;
+        {            //Avatar.sprite = Attacking;
             availstamina -= 5;
             if(MeleeWeapon.activeSelf)
             {
@@ -183,10 +186,7 @@ public class PlayerStats : MonoBehaviour {
               
 
         }
-		if(MeleeWeapon.GetComponent<BoxCollider2D>().enabled)
-		{
-			MeleeWeapon.GetComponent<BoxCollider2D>().enabled = false;
-		}
+        
     }
 
     void StaminaRegen()

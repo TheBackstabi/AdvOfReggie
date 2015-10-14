@@ -38,8 +38,8 @@ public class AM_MobSpawnerScript : MonoBehaviour {
                             newPos.x += Random.Range(-randomRange, randomRange);
                             newEnemy.transform.position = newPos;
                         }
-                        newEnemy.GetComponent<AM_NPCScript>().moveSpeed += Random.RandomRange(-.3f, .3f);
-                        newEnemy.GetComponent<AM_NPCScript>().attackRange += Random.RandomRange(-.15f, .15f);
+                        newEnemy.GetComponent<AM_NPCScript>().moveSpeed += Random.Range(-.3f, .3f);
+                        newEnemy.GetComponent<AM_NPCScript>().attackRange += Random.Range(-.15f, .15f);
                         newEnemy.GetComponent<AM_NPCScript>().isActive = true;
                         newEnemy.GetComponent<AM_NPCScript>().ResetFacing();
                         newEnemy.GetComponent<Rigidbody2D>().gravityScale = 1;
@@ -58,8 +58,8 @@ public class AM_MobSpawnerScript : MonoBehaviour {
                             newPos.x += Random.Range(-randomRange, randomRange);
                             newEnemy.transform.position = newPos;
                         }
-                        newEnemy.GetComponent<AM_NPCScript>().moveSpeed += Random.RandomRange(-.3f, .3f);
-                        newEnemy.GetComponent<AM_NPCScript>().attackRange += Random.RandomRange(-.15f, .15f);
+                        newEnemy.GetComponent<AM_NPCScript>().moveSpeed += Random.Range(-.3f, .3f);
+                        newEnemy.GetComponent<AM_NPCScript>().attackRange += Random.Range(-.15f, .15f);
                         newEnemy.GetComponent<AM_NPCScript>().isActive = true;
                         newEnemy.GetComponent<AM_NPCScript>().ResetFacing();
                         newEnemy.GetComponent<Rigidbody2D>().gravityScale = 1;
