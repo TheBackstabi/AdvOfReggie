@@ -17,7 +17,7 @@ public class PlayerStats : MonoBehaviour {
     public Sprite Attacking;
     public GameObject MeleeWeapon;
     public GameObject RangedWeapon;
-    private bool WeaponSelected = false;
+    //private bool WeaponSelected = false;
     public GameObject Camera1;
     public GameObject GroundCheck;
     public GameObject Ground;
