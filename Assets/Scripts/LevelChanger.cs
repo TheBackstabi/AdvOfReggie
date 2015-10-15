@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LevelChanger : MonoBehaviour {
+public class LevelChanger : MonoBehaviour 
+{
+	//public GameObject Enemies;
 
 	// Use this for initialization
 	void Start () {

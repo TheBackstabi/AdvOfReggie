@@ -9,7 +9,6 @@
 	<ProjectGuid>{9F5279FD-063A-9BA8-2F99-FC73595CCF44}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
-	<RootNamespace></RootNamespace>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
@@ -29,7 +28,6 @@
 	<DebugType>pdbonly</DebugType>
 	<Optimize>true</Optimize>
 	<OutputPath>Temp\bin\Release\</OutputPath>
-	<DefineConstants>TRACE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -47,6 +45,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Death.cs" />
      <Compile Include="Assets\Scripts\AM_ArrowScript.cs" />
      <Compile Include="Assets\Scripts\AM_IceBossScript.cs" />
      <Compile Include="Assets\Scripts\AM_MobSpawnerScript.cs" />
@@ -59,6 +58,7 @@
      <Compile Include="Assets\Scripts\LevelChanger.cs" />
      <Compile Include="Assets\Scripts\MessageTrigger.cs" />
      <Compile Include="Assets\Scripts\MusicTransitionScript.cs" />
+     <Compile Include="Assets\Scripts\Platforms.cs" />
      <Compile Include="Assets\Scripts\PlayerCrouch.cs" />
      <Compile Include="Assets\Scripts\PlayerStatUIControls.cs" />
      <Compile Include="Assets\Scripts\PlayerStats.cs" />

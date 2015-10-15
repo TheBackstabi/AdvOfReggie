@@ -5,8 +5,8 @@ public class MusicTransitionScript : MonoBehaviour
 {
 
     public GameObject Player = null;
-	//public AudioClip FirstSound;
-	//public AudioClip SecondSound;
+	//public AudioSource FirstSound;
+	//public AudioSource SecondSound;
     public float TransitionSpeed = 0.25f;
     public bool Flip = false;
 
@@ -24,11 +24,11 @@ public class MusicTransitionScript : MonoBehaviour
         {
             foreach(AudioSource audioSource in Player.GetComponents<AudioSource>())
             {
-                if(audioSource.clip != null && audioSource.clip.name == "Theme1")
+                if(audioSource.clip != null && audioSource.clip.name == "Theme3")
                 {
                     FirstSound = audioSource;
                 }
-                else if(audioSource.clip != null && audioSource.clip.name == "Theme2")
+                else if(audioSource.clip != null && audioSource.clip.name == "Theme3c")
                 {
                     SecondSound = audioSource;
                 }
