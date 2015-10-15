@@ -24,6 +24,14 @@ public class AM_ArrowScript : MonoBehaviour {
                 else if (target.position.y < transform.position.y)
                     transform.Rotate(0.0f, 0.0f, 180.0f);
 
+                
+                //if (target.position.x > transform.position.x)
+                //    transform.Rotate(new Vector3(0f, 0f, 1f), -Vector3.Angle(transform.position, -target.position));
+                //else if (target.position.y < transform.position.y - 1)
+                //    transform.Rotate(new Vector3(0f, 0f, 1f), Vector3.Angle(target.position, transform.position));
+                //else
+                //    transform.Rotate(new Vector3(0f, 0f, 1f), Vector3.Angle(transform.position, -target.position));
+                
                 GetComponent<Rigidbody2D>().AddForce(fireStrength * Vector3.Normalize((target.position - transform.position)));
             }
         }
