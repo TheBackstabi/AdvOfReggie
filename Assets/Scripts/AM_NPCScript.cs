@@ -196,6 +196,10 @@ public class AM_NPCScript : MonoBehaviour {
             lastPlatform = coll;
             GetComponent<Rigidbody2D>().gravityScale = 0;
         }
+        else if (coll.gameObject.tag == "Hazardous")
+        {
+            currHealth -= 5;
+        }
     }
 
     void OnTriggerStay2D(Collider2D other)
