@@ -7,9 +7,9 @@ public class BounceBehaviour : MonoBehaviour
 	
 	void OnTriggerEnter2D( Collider2D coll )
 	{		
-		if(coll.tag == "Player")
+		if(coll.tag == "Player" && Player.GetComponent<Rigidbody2D>().velocity.y != 0)
 		{
-			Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(Player.GetComponent<Rigidbody2D>().velocity.x*2, 600.0f));
+			Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(Player.GetComponent<Rigidbody2D>().velocity.x*2, 900.0f));
 		}
 	}
 	// Use this for initialization
