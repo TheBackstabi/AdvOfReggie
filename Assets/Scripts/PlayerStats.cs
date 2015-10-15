@@ -189,7 +189,7 @@ public class PlayerStats : MonoBehaviour {
             availstamina -= 5;
         }
 
-        if(hitcount == 0)
+        if(hitcount <= 0)
         {
             GetComponent<Animator>().SetBool("Death", true);
             //Invoke("Death", 3);

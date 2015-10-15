@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BounceBehaviour.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AM_MobSpawnerScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\BounceBehaviour.cs" Line="12" Column="110" />
+      <File FileName="Assets\Scripts\LevelChanger.cs" Line="43" Column="1" />
+      <File FileName="Assets\Scripts\AM_MobSpawnerScript.cs" Line="78" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

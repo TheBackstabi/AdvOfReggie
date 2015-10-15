@@ -21,9 +21,9 @@ public class LevelChanger : MonoBehaviour
 		Application.LoadLevel(scene);
 	}
 
-	void OnTriggerEnter2D(Collider2D other)
+	void OnTriggerStay2D(Collider2D other)
 	{
-		if(other.gameObject.tag == "Player")
+		if(other.gameObject.tag == "Player" && Input.GetMouseButton(0))
 		{
 			if(Application.loadedLevelName == "Real_Tutorial")
 			{
