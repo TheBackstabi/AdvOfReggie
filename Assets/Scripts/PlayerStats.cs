@@ -70,11 +70,10 @@ public class PlayerStats : MonoBehaviour {
                 if (availstamina >= 15)
                 {
                     
-                     Debug.Log("Started from the bottom");
                         //Avatar.sprite = Jumping;
                         //canJump = false;
                         CancelInvoke();
-                        player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 5000));
+                        player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 7500));
                         availstamina -= 15;
 
                 }
