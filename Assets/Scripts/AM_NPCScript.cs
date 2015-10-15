@@ -18,7 +18,7 @@ public class AM_NPCScript : MonoBehaviour {
     [Tooltip("Is the mob on screen and able to do stuff")]
     public bool isActive = true;
 
-    private float currHealth;
+    private int currHealth;
     private float moveDir, prevDir;
     private AudioSource[] audioSources;
     private Collider2D lastPlatform = null;
@@ -126,11 +126,18 @@ public class AM_NPCScript : MonoBehaviour {
         {
             if (Reggie.transform.position.x <= transform.position.x && moveDir == -1)
             {
-                Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
+                if (Reggie.GetComponent<PlayerStats>().isCrouched)
+                    Reggie.GetComponent<PlayerStats>().hitcount -= (damageVal / 2);
+                else
+                    Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
                 audioSources[2].Play();
             }
             else if (Reggie.transform.position.x >= transform.position.x && moveDir == 1)
             {
+                if (Reggie.GetComponent<PlayerStats>().isCrouched)
+                    Reggie.GetComponent<PlayerStats>().hitcount -= (damageVal / 2);
+                else
+                    Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
                 Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
                 audioSources[2].Play();
             }
@@ -172,7 +179,7 @@ public class AM_NPCScript : MonoBehaviour {
     {
         if (coll.gameObject.tag == "PlayerWeapon")
         {
-            currHealth -= coll.gameObject.GetComponent<WeaponStats>().damage;
+            currHealth -= (int)coll.gameObject.GetComponent<WeaponStats>().damage;
 		
     		audioSources[0].Play();
         }
@@ -234,5 +241,10 @@ public class AM_NPCScript : MonoBehaviour {
     public void TakeDamage(int _damage)
     {
         currHealth -= _damage;
+    }
+
+    public int GetHealth()
+    {
+        return currHealth;
     }
 }

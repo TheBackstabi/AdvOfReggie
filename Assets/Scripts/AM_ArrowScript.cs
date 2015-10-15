@@ -17,13 +17,17 @@ public class AM_ArrowScript : MonoBehaviour {
         {
             if (target != null)
             {
-                if (target.position.x > transform.position.x + 2)
-                    transform.Rotate(0.0f, 0.0f, -90.0f);
-                else if (target.position.x < transform.position.x - 2)
-                    transform.Rotate(0.0f, 0.0f, 90.0f);
-                else if (target.position.y < transform.position.y)
-                    transform.Rotate(0.0f, 0.0f, 180.0f);
+                //if (target.position.x > transform.position.x + 2)
+                //    transform.Rotate(0.0f, 0.0f, -90.0f);
+                //else if (target.position.x < transform.position.x - 2)
+                //    transform.Rotate(0.0f, 0.0f, 90.0f);
+                //else if (target.position.y < transform.position.y)
+                //    transform.Rotate(0.0f, 0.0f, 180.0f);
 
+                if (target.position.x > transform.position.x)
+                    transform.Rotate(new Vector3(0f, 0f, 1f), -Vector3.Angle(transform.position, -target.position));
+                else
+                    transform.Rotate(new Vector3(0f, 0f, 1f), Vector3.Angle(target.position, transform.position));
                 GetComponent<Rigidbody2D>().AddForce(fireStrength * Vector3.Normalize((target.position - transform.position)));
             }
         }
