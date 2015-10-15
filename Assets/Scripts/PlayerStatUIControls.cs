@@ -13,7 +13,7 @@ public class PlayerStatUIControls : MonoBehaviour {
     [SerializeField]
     PlayerStats player;
 
-    private int healthwidth = 230;
+    private int healthwidth = 235;
     public int healthcount;
     private int staminacount;
 
