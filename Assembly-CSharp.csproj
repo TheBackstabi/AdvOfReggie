@@ -45,6 +45,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Death.cs" />
      <Compile Include="Assets\Scripts\AM_ArrowScript.cs" />
      <Compile Include="Assets\Scripts\AM_IceBossScript.cs" />
      <Compile Include="Assets\Scripts\AM_MobSpawnerScript.cs" />
