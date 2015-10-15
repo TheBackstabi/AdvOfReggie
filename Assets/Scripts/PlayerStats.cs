@@ -27,6 +27,8 @@ public class PlayerStats : MonoBehaviour {
     public bool Facingleft = false;
     public int deathtimer = 10;
     public GameObject ArrowType;
+    public bool jumped;
+    public LayerMask platform;
 
 
 	void Start () 
@@ -55,6 +57,33 @@ public class PlayerStats : MonoBehaviour {
             transform.position = new Vector3(Camera1.transform.position.x - 7.2f, transform.position.y, 0.0f);
         }
 
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) /*canJump &&*/)
+        {
+            if (Physics2D.OverlapCircle(GroundCheck.transform.position, 0.1f, platform))
+                jumped = true;
+        }
+
+        if(jumped)
+        {
+            jumped = false;
+            GetComponent<Animator>().SetBool("jump", true);
+                if (availstamina >= 15)
+                {
+                    
+                        //Avatar.sprite = Jumping;
+                        //canJump = false;
+                        CancelInvoke();
+                        player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 7500));
+                        availstamina -= 15;
+
+                }
+        }
+
+        if (Physics2D.OverlapCircle(GroundCheck.transform.position, 0.1f, platform) && GetComponent<Rigidbody2D>().velocity.y < 0) 
+            {
+                GetComponent<Animator>().SetBool("jump", false);
+            }
+
         
         
 	}
@@ -65,10 +94,13 @@ public class PlayerStats : MonoBehaviour {
         {
             MeleeWeapon.GetComponent<BoxCollider2D>().enabled = false;
         }
+
+        
+
         if (Input.GetKey(KeyCode.S))
         {
-            //GetComponent<Animator>().SetBool("crouch", true);
-            Avatar.sprite = Crouching;
+            GetComponent<Animator>().SetBool("crouch", true);
+            //Avatar.sprite = Crouching;
             if (!isCrouched)
             { 
                 //Weapon.transform.position = new Vector3(Weapon.transform.position.x, Weapon.transform.position.y - 0.1f, Weapon.transform.position.z);
@@ -78,10 +110,10 @@ public class PlayerStats : MonoBehaviour {
         }
         else if (Input.GetKey(KeyCode.A) && !isCrouched) //&& GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()))
         {
-            //GetComponent<Animator>().SetBool("Walking", true);
+            GetComponent<Animator>().SetBool("walk", true);
             //Avatar.sprite = Walking;
             //player.transform.localScale = new Vector3(-1.0f *player.transform.localScale.x , player.transform.localScale.y, player.transform.localScale.z);
-           // PlayerLocation.Translate(-0.1f, 0.0f, 0.0f);
+            //PlayerLocation.Translate(-0.1f, 0.0f, 0.0f);
 			if (!Facingleft)
 			{
 				player.transform.localScale = new Vector3(transform.localScale.x * -1.0f, transform.localScale.y, transform.localScale.z);
@@ -90,12 +122,12 @@ public class PlayerStats : MonoBehaviour {
 				// Weapon.transform.Translate(new Vector3(-50, 0, 0));
 			}
             Facingleft = true;
-            player.GetComponent<Rigidbody2D>().velocity = new Vector2(-1.8f, player.GetComponent<Rigidbody2D>().velocity.y);
+            player.GetComponent<Rigidbody2D>().velocity = new Vector2(-4.0f, player.GetComponent<Rigidbody2D>().velocity.y);
 
         }
         else if (Input.GetKey(KeyCode.D) && !isCrouched) //&& GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()))
         {
-            //GetComponent<Animator>().SetBool("Walking", true);
+            GetComponent<Animator>().SetBool("walk", true);
             //PlayerLocation.Translate(0.1f, 0.0f, 0.0f);
             //Avatar.sprite = Walking;
 			if (Facingleft)
@@ -105,7 +137,8 @@ public class PlayerStats : MonoBehaviour {
 				
 			}
             Facingleft = false;
-            player.GetComponent<Rigidbody2D>().velocity = new Vector2(1.8f, player.GetComponent<Rigidbody2D>().velocity.y);
+            player.GetComponent<Rigidbody2D>().velocity = new Vector2(4.0f, player.GetComponent<Rigidbody2D>().velocity.y);
+           
         }
         //else if (Input.GetKeyDown(KeyCode.Tab) && availstamina >= 10)
         //{
@@ -131,30 +164,16 @@ public class PlayerStats : MonoBehaviour {
         //}
         else
         {
-            GetComponent<Animator>().SetBool("Walking", false);
-            GetComponent<Animator>().SetBool("Crouch", false);
-            if (GetComponent<Rigidbody2D>().velocity.y != 0)
-                Avatar.sprite = Jumping;
-            else
+            GetComponent<Animator>().SetBool("walk", false);
+            GetComponent<Animator>().SetBool("crouch", false);
+            GetComponent<Animator>().SetBool("attack", false);
+            //GetComponent<Animator>().SetBool("jump", false);
+            if (GetComponent<Rigidbody2D>().velocity.y  <= 0)
                 Avatar.sprite = Idle;
             isCrouched = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)) /*canJump &&*/  /*&& GroundCheck.GetComponent<BoxCollider2D>().IsTouchingLayers(15) */
-        {
-            if(availstamina >= 15)
-            {
-                if (GetComponent<Rigidbody2D>().velocity.y == 0)
-                {
-                    Avatar.sprite = Jumping;
-                    //canJump = false;
-                    CancelInvoke();
-                    player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 500));
-                    availstamina -= 15;
-                }
-            }
-            
-        }
+       
 
         //if (GetComponent<Rigidbody2D>().velocity.y == 0 && GroundCheck.GetComponent<BoxCollider2D>().IsTouching(Ground.GetComponent<BoxCollider2D>()) || player.GetComponent<Collider2D>().IsTouchingLayers(15))
         //{
@@ -164,21 +183,22 @@ public class PlayerStats : MonoBehaviour {
         StaminaRegen();
 
         if(Input.GetMouseButtonDown(0))
-        {            Avatar.sprite = Attacking;
+        {           // Avatar.sprite = Attacking;
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0.0f, 0.0f, 0.0f);
             availstamina -= 5;
             Weapon.transform.localRotation.Set(Weapon.transform.localRotation.x, Weapon.transform.localRotation.y + 30.5f, Weapon.transform.localRotation.z, Weapon.transform.localRotation.w);
-               // GetComponent<Animator>().SetBool("Attacking", true);
+            GetComponent<Animator>().SetBool("attack", true);
             if(MeleeWeapon.activeSelf)
             {
-                MeleeWeapon.GetComponent<BoxCollider2D>().enabled = true;                
+                MeleeWeapon.GetComponent<BoxCollider2D>().enabled = true;    
             }
                 
         }
 
         if (Input.GetMouseButtonDown(1))
         {
-            //GetComponent<Animator>().SetBool("Attacking", true);
-            Avatar.sprite = Attacking;
+            GetComponent<Animator>().SetBool("attack", true);
+            //Avatar.sprite = Attacking;
             if (MeleeWeapon.activeSelf)
             {
                 MeleeWeapon.GetComponent<BoxCollider2D>().enabled = true;
@@ -191,9 +211,9 @@ public class PlayerStats : MonoBehaviour {
 
         if(hitcount <= 0)
         {
-            GetComponent<Animator>().SetBool("Death", true);
-            //Invoke("Death", 3);
-			Death();
+            GetComponent<Animator>().SetBool("death", true);
+            Invoke("Death", 3.0f);
+			//Death();
               
 
         }
