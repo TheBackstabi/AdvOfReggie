@@ -29,10 +29,15 @@ public class PlayerStats : MonoBehaviour {
     public GameObject ArrowType;
     public bool jumped;
     public LayerMask platform;
+    private Vector2 NormBounds;
+    private Vector2 CrouchBounds;
+
 
 
 	void Start () 
     {
+        NormBounds = GetComponent<BoxCollider2D>().size;
+        CrouchBounds = new Vector2(NormBounds.x, NormBounds.y -2.0f);
         MeleeWeapon = GameObject.Find("Katana");
         RangedWeapon = GameObject.Find("Bow");
         RangedWeapon.SetActive(false);
@@ -84,22 +89,47 @@ public class PlayerStats : MonoBehaviour {
                 GetComponent<Animator>().SetBool("jump", false);
             }
 
-        
-        
-	}
+        //if (!isCrouched && !BoundsDifference(GetComponent<BoxCollider2D>().size))
+        //{
+        //    Debug.Log("Enters Bound Change in Update");
+        //    GetComponent<BoxCollider2D>().size.Set(NormBounds.x, NormBounds.y);
+        //}
 
-    void FixedUpdate()
-    {
         if (MeleeWeapon.GetComponent<BoxCollider2D>().enabled)
         {
             MeleeWeapon.GetComponent<BoxCollider2D>().enabled = false;
         }
 
         
+        
+	}
+
+    bool BoundsDifference(Vector2 compared)
+    {
+        if (NormBounds.x == compared.x && NormBounds.y == compared.y)
+        {
+            Debug.Log("Bounds returned true");
+            return true;
+        }
+        else
+        {
+            Debug.Log("Bounds returned false");
+            return false;
+        }
+
+    }
+
+    void FixedUpdate()
+    {
+        
 
         if (Input.GetKey(KeyCode.S))
         {
             GetComponent<Animator>().SetBool("crouch", true);
+            GetComponent<BoxCollider2D>().size.Set(1.2f, 5.0f);
+            if (BoundsDifference(GetComponent<BoxCollider2D>().size))
+                Debug.Log("Successful Change in Bounds");
+
             //Avatar.sprite = Crouching;
             if (!isCrouched)
             { 
@@ -212,7 +242,7 @@ public class PlayerStats : MonoBehaviour {
         if(hitcount <= 0)
         {
             GetComponent<Animator>().SetBool("death", true);
-            Invoke("Death", 3.0f);
+            Invoke("Death", Time.deltaTime * 30);
 			//Death();
               
 
