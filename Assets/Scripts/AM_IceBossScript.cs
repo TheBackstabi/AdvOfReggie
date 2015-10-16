@@ -34,7 +34,9 @@ public class AM_IceBossScript : MonoBehaviour {
             {
                 arrowSet = true;
                 Reticule.GetComponent<SpriteRenderer>().enabled = true;
-                Reticule.transform.position = baseScript.Reggie.transform.position;
+                Vector3 pos = baseScript.Reggie.transform.position;
+                pos.y += 1;
+                Reticule.transform.position = pos;
             }
         }
 	}
