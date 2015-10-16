@@ -1,0 +1,496 @@
+fileFormatVersion: 2
+guid: 7eaee5d10d989d845ac9144c064fcad9
+timeCreated: 1444956190
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: steampunk celuna set 10_15
+    21300002: steampunk celuna set 10_16
+    21300004: steampunk celuna set 10_17
+    21300006: steampunk celuna set 10_18
+    21300008: steampunk celuna set 10_19
+    21300010: steampunk celuna set 10_20
+    21300012: steampunk celuna set 10_21
+    21300014: steampunk celuna set 10_22
+    21300016: steampunk celuna set 10_23
+    21300018: steampunk celuna set 10_24
+    21300020: steampunk celuna set 10_25
+    21300022: steampunk celuna set 10_26
+    21300024: steampunk celuna set 10_27
+    21300026: steampunk celuna set 10_28
+    21300028: steampunk celuna set 10_29
+    21300030: steampunk celuna set 10_30
+    21300032: steampunk celuna set 10_31
+    21300034: steampunk celuna set 10_32
+    21300036: steampunk celuna set 10_33
+    21300038: steampunk celuna set 10_34
+    21300040: steampunk celuna set 10_35
+    21300042: steampunk celuna set 10_36
+    21300044: steampunk celuna set 10_37
+    21300046: steampunk celuna set 10_38
+    21300048: steampunk celuna set 10_39
+    21300050: steampunk celuna set 10_40
+    21300052: steampunk celuna set 10_41
+    21300054: steampunk celuna set 10_42
+    21300056: steampunk celuna set 10_43
+    21300058: steampunk celuna set 10_44
+    21300060: steampunk celuna set 10_45
+    21300062: steampunk celuna set 10_46
+    21300064: steampunk celuna set 10_47
+    21300066: steampunk celuna set 10_48
+    21300068: steampunk celuna set 10_49
+    21300070: steampunk celuna set 10_50
+    21300072: steampunk celuna set 10_51
+    21300074: steampunk celuna set 10_52
+    21300076: steampunk celuna set 10_53
+    21300078: steampunk celuna set 10_54
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: steampunk celuna set 10_15
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 227
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_16
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 227
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_17
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 227
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_18
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 226
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_19
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 226
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_20
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 226
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_21
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 226
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_22
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 226
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_23
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 224
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_24
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 225
+        width: 59
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_25
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 155
+        width: 34
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_26
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_27
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 157
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_28
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 176
+        width: 35
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_29
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 163
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_30
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 162
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_31
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 161
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_32
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 100
+        width: 57
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_33
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 99
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_34
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 101
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_35
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 101
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_36
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 100
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_37
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 101
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_38
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 101
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_39
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 101
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_40
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 97
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_41
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 97
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_42
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 99
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_43
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 17
+        width: 29
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_44
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 15
+        width: 32
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_45
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 16
+        width: 15
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_46
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 18
+        width: 21
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_47
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 18
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_48
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 18
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_49
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 18
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_50
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 18
+        width: 35
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_51
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 18
+        width: 20
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_52
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 18
+        width: 57
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_53
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 18
+        width: 57
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: steampunk celuna set 10_54
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 40
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
