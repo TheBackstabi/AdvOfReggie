@@ -16,7 +16,7 @@ public class PlayerStats : MonoBehaviour {
     public Sprite Jumping;
     public Sprite Attacking;
     public GameObject MeleeWeapon;
-   // public GameObject RangedWeapon;
+    public GameObject RangedWeapon;
     //private bool WeaponSelected = false;
     public GameObject Camera1;
     public GameObject GroundCheck;
@@ -39,8 +39,8 @@ public class PlayerStats : MonoBehaviour {
         NormBounds = GetComponent<BoxCollider2D>().size;
         CrouchBounds = new Vector2(NormBounds.x, NormBounds.y -2.0f);
         MeleeWeapon = GameObject.Find("Katana");
-        //RangedWeapon = GameObject.Find("Bow");
-        //RangedWeapon.SetActive(false);
+        RangedWeapon = GameObject.Find("Bow");
+        RangedWeapon.SetActive(false);
         collision = player.GetComponent<BoxCollider2D>();
         Avatar = player.GetComponent<SpriteRenderer>();
 		Weapon = MeleeWeapon;
@@ -52,10 +52,10 @@ public class PlayerStats : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-        //if (collision.IsTouchingLayers(14))
-        //{
-        //    hitcount--;
-        //}
+        if (collision.IsTouchingLayers(14))
+        {
+            hitcount--;
+        }
 
         if(transform.position.x <= Camera1.transform.position.x - 7.2f)
         {
@@ -175,16 +175,16 @@ public class PlayerStats : MonoBehaviour {
         //    CancelInvoke();
         //    if (!WeaponSelected)
         //    {
-        //        //RangedWeapon.SetActive(true);
-        //        //RangedWeapon.transform.position = MeleeWeapon.transform.position;
-        //        //RangedWeapon.transform.localScale = new Vector3(//RangedWeapon.transform.localScale.x * -1.0f, //RangedWeapon.transform.localScale.y, //RangedWeapon.transform.localScale.z);
+        //        RangedWeapon.SetActive(true);
+        //        RangedWeapon.transform.position = MeleeWeapon.transform.position;
+        //        RangedWeapon.transform.localScale = new Vector3(RangedWeapon.transform.localScale.x * -1.0f, RangedWeapon.transform.localScale.y, RangedWeapon.transform.localScale.z);
         //        MeleeWeapon.SetActive(false);
-        //        Weapon = //RangedWeapon;
+        //        Weapon = RangedWeapon;
         //    }
         //    else
         //    {
         //        Weapon = MeleeWeapon;
-        //        //RangedWeapon.SetActive(false);
+        //        RangedWeapon.SetActive(false);
         //        MeleeWeapon.SetActive(true);
 
 
@@ -276,11 +276,8 @@ public class PlayerStats : MonoBehaviour {
 
     }
 
-     void LockArea()
+    void OnHit()
     {
-        if (transform.position.x >= Camera1.transform.position.x + 7.2f)
-        {
-            transform.position = new Vector3(Camera1.transform.position.x + 5.2f, transform.position.y, 0.0f);
-        }
+        GetComponent<Animator>().ResetTrigger("hurt");
     }
 }
