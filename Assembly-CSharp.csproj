@@ -65,17 +65,11 @@
      <Compile Include="Assets\Scripts\ToggleCollision.cs" />
      <Compile Include="Assets\Scripts\Trigger.cs" />
      <Compile Include="Assets\Scripts\WeaponStats.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>F:/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

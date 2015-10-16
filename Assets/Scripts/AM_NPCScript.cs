@@ -45,7 +45,6 @@ public class AM_NPCScript : MonoBehaviour {
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             GetComponent<Animator>().SetBool("Dead", true);
         }
-        
     }
 	
 	// Update is called once per frame
@@ -114,6 +113,7 @@ public class AM_NPCScript : MonoBehaviour {
                 }
             }
 
+
         }
 	}
 
@@ -126,21 +126,27 @@ public class AM_NPCScript : MonoBehaviour {
                 if (Reggie.GetComponent<PlayerStats>().isCrouched)
                 {
                     Reggie.GetComponent<PlayerStats>().hitcount -= (damageVal / 2);
-                    
+                    Reggie.GetComponent<Animator>().SetTrigger("hurt");
                 }
                 else
                 {
                     Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
-
+                    Reggie.GetComponent<Animator>().SetTrigger("hurt");
                 }
                 audioSources[2].Play();
             }
             else if (Reggie.transform.position.x >= transform.position.x && moveDir == 1)
             {
                 if (Reggie.GetComponent<PlayerStats>().isCrouched)
+                {
                     Reggie.GetComponent<PlayerStats>().hitcount -= (damageVal / 2);
+                    Reggie.GetComponent<Animator>().SetTrigger("hurt");
+                }
                 else
+                {
                     Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
+                    Reggie.GetComponent<Animator>().SetTrigger("hurt");
+                }
                 Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
                 audioSources[2].Play();
             }
