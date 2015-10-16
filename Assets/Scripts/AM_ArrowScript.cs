@@ -15,6 +15,8 @@ public class AM_ArrowScript : MonoBehaviour {
         }
         else
         {
+            
+
             if (target != null)
             {
                 if (target.position.x > transform.position.x + 2)

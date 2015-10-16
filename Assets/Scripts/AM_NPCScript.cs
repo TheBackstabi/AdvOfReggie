@@ -34,9 +34,9 @@ public class AM_NPCScript : MonoBehaviour {
 
     void Update()
     {
-        if (!isAlive && audioSources[1].isPlaying == false)
+        if (!isAlive && audioSources[1].isPlaying == false) // If I'm dead
             Destroy(gameObject);
-        else if (currHealth <= 0 && isActive) // If I'm dead
+        else if (currHealth <= 0 && isActive) // If I need to die
         {
             if (!isRanged)
                 GetComponent<Animator>().SetBool("IsMoving", false);
@@ -58,7 +58,7 @@ public class AM_NPCScript : MonoBehaviour {
                 GetComponent<Rigidbody2D>().gravityScale = 1;
             }
 
-            // If I'm on the groundand not attacking, I can move
+            // If I'm on the ground and not attacking, I can move
             if (GetComponent<Rigidbody2D>().velocity.y == 0)
             {
                 if (Reggie.transform.position.x >= transform.position.x) // Adjust direction based on player loc
@@ -96,10 +96,7 @@ public class AM_NPCScript : MonoBehaviour {
                         {
                             // We're on the ground, move into range
                             
-                            if (currVel.x < moveSpeed)
-                                currVel.x = moveSpeed * moveDir;
-                            else
-                                currVel.x = currVel.x + moveDir * Time.deltaTime * moveSpeed;
+                            currVel.x = moveDir * moveSpeed;
                             GetComponent<Rigidbody2D>().velocity = currVel;
                             
                         }
@@ -127,9 +124,15 @@ public class AM_NPCScript : MonoBehaviour {
             if (Reggie.transform.position.x <= transform.position.x && moveDir == -1)
             {
                 if (Reggie.GetComponent<PlayerStats>().isCrouched)
+                {
                     Reggie.GetComponent<PlayerStats>().hitcount -= (damageVal / 2);
+                    
+                }
                 else
+                {
                     Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
+
+                }
                 audioSources[2].Play();
             }
             else if (Reggie.transform.position.x >= transform.position.x && moveDir == 1)
@@ -175,12 +178,13 @@ public class AM_NPCScript : MonoBehaviour {
         GetComponent<SpriteRenderer>().enabled = false;
     }
 
-    void OnTriggerEnter2D(Collider2D coll)
+    void OnTriggerEnter2D(Collider2D coll) // Get hit by stuff
     {
         if (coll.gameObject.tag == "PlayerWeapon")
         {
             currHealth -= (int)coll.gameObject.GetComponent<WeaponStats>().damage;
-		
+            //GetComponent<Rigidbody2D>().AddForce(new Vector2(5000f * -moveDir, 0f));
+            transform.Translate(.25f * -moveDir, .15f, 0f);
     		audioSources[0].Play();
         }
         if (coll.gameObject.tag == "PlayerArrow")
@@ -202,7 +206,7 @@ public class AM_NPCScript : MonoBehaviour {
         }
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other) // Platform detection
     {
         if (other.gameObject.tag == "Platform")
         {
@@ -214,17 +218,18 @@ public class AM_NPCScript : MonoBehaviour {
         }
     }
 
-    void OnBecameInvisible()
-    {
-        isActive = false;
-    }
+    //void OnBecameInvisible()
+    //{
+    //    isActive = false;
+    //    GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+    //}
+    //
+    //void OnBecameVisibile()
+    //{
+    //    isActive = true;
+    //}
 
-    void OnBecameVisibile()
-    {
-        isActive = true;
-    }
-
-    public void ResetFacing()
+    public void ResetFacing() // Fix for backwards enemies
     {
         if (Reggie.transform.position.x > transform.position.x)
         {
@@ -247,7 +252,7 @@ public class AM_NPCScript : MonoBehaviour {
         currHealth -= _damage;
     }
 
-    public int GetHealth()
+    public int GetHealth() // Maybe necessary for healthbars?
     {
         return currHealth;
     }
