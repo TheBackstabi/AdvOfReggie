@@ -17,7 +17,7 @@ public class FallingBehaviour : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D coll)
 	{
-		if(coll.collider.tag == "PlayerWeapon")
+		if(coll.collider.tag == "PlayerWeapon" || coll.collider.tag == "Player")
 		{
 			GetComponent<Rigidbody2D>().mass = 8.0f;
 			GetComponent<Rigidbody2D>().gravityScale = 8.0f;
