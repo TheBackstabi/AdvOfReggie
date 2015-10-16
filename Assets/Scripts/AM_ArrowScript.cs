@@ -52,6 +52,7 @@ public class AM_ArrowScript : MonoBehaviour {
             GetComponent<AudioSource>().Play();
             GetComponent<SpriteRenderer>().enabled = false;
             other.GetComponent<PlayerStats>().hitcount--;
+            other.GetComponent<Animator>().SetTrigger("hurt");
         }
         else if (gameObject.tag == "PlayerWeapon" && other.gameObject.tag == "Enemy")
         {
