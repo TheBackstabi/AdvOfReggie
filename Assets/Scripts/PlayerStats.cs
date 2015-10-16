@@ -242,7 +242,7 @@ public class PlayerStats : MonoBehaviour {
         if(hitcount <= 0)
         {
             GetComponent<Animator>().SetBool("death", true);
-            Invoke("Death", Time.deltaTime * 1.2f);
+            Invoke("Death", Time.deltaTime * 30);
 			//Death();
               
 
