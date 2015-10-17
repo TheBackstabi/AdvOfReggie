@@ -22,22 +22,29 @@ public class CameraLock : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-	    if(target.transform.localPosition.x >= transform.localPosition.x + 7.25f)
-        {
-            transform.localPosition = new Vector3(target.transform.localPosition.x + 7.3f, transform.localPosition.y,transform.localPosition.z);
-        }
+        //if(target.transform.localPosition.x >= transform.localPosition.x + 7.25f)
+        //{
+        //    transform.localPosition = new Vector3(target.transform.localPosition.x + 7.3f, transform.localPosition.y,transform.localPosition.z);
+        //}
 
-        if (Application.loadedLevelName == "Boss Arctic Menace")
-        {
-            GameObject boss = GameObject.Find("IceBoss");
-            planes = GeometryUtility.CalculateFrustumPlanes(Camera.main);
-            bossbox = boss.GetComponent<BoxCollider2D>();
+        //if (target.transform.localPosition.x <= transform.localPosition.x - 7.25f)
+        //{
+        //    transform.localPosition = new Vector3(target.transform.localPosition.x - 7.3f, transform.localPosition.y, transform.localPosition.z);
+        //}
 
-            if (GeometryUtility.TestPlanesAABB(planes, bossbox.bounds))
-            {
-                Debug.Log("Saw Boss");
-                target.SendMessage("LockArea");
-            }
-        }
+        transform.localPosition = new Vector3(target.transform.localPosition.x, transform.localPosition.y, transform.localPosition.z);
+
+        //if (Application.loadedLevelName == "Boss Arctic Menace")
+        //{
+        //    GameObject boss = GameObject.Find("IceBoss");
+        //    planes = GeometryUtility.CalculateFrustumPlanes(Camera.main);
+        //    bossbox = boss.GetComponent<BoxCollider2D>();
+
+        //    if (GeometryUtility.TestPlanesAABB(planes, bossbox.bounds))
+        //    {
+        //        Debug.Log("Saw Boss");
+        //        target.SendMessage("LockArea");
+        //    }
+        //}
 	}
 }
