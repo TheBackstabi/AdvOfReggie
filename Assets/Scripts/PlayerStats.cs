@@ -275,4 +275,9 @@ public class PlayerStats : MonoBehaviour {
         Application.LoadLevel(Application.loadedLevelName);
 
     }
+
+    void OnHit()
+    {
+        GetComponent<Animator>().ResetTrigger("hurt");
+    }
 }
