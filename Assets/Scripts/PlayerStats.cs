@@ -16,7 +16,7 @@ public class PlayerStats : MonoBehaviour {
     public Sprite Jumping;
     public Sprite Attacking;
     public GameObject MeleeWeapon;
-    public GameObject RangedWeapon;
+    //public GameObject RangedWeapon;
     //private bool WeaponSelected = false;
     public GameObject Camera1;
     public GameObject GroundCheck;
@@ -39,8 +39,8 @@ public class PlayerStats : MonoBehaviour {
         NormBounds = GetComponent<BoxCollider2D>().size;
         CrouchBounds = new Vector2(NormBounds.x, NormBounds.y -2.0f);
         MeleeWeapon = GameObject.Find("Katana");
-        RangedWeapon = GameObject.Find("Bow");
-        RangedWeapon.SetActive(false);
+        //RangedWeapon = GameObject.Find("Bow");
+        //RangedWeapon.SetActive(false);
         collision = player.GetComponent<BoxCollider2D>();
         Avatar = player.GetComponent<SpriteRenderer>();
 		Weapon = MeleeWeapon;
@@ -52,15 +52,15 @@ public class PlayerStats : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-        if (collision.IsTouchingLayers(14))
-        {
-            hitcount--;
-        }
+        //if (collision.IsTouchingLayers(14))
+        //{
+        //    hitcount--;
+        //}
 
-        if(transform.position.x <= Camera1.transform.position.x - 7.2f)
-        {
-            transform.position = new Vector3(Camera1.transform.position.x - 7.2f, transform.position.y, 0.0f);
-        }
+        //if(transform.position.x <= Camera1.transform.position.x - 7.2f)
+        //{
+        //    transform.position = new Vector3(Camera1.transform.position.x - 7.2f, transform.position.y, 0.0f);
+        //}
 
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) /*canJump &&*/)
         {
@@ -175,16 +175,16 @@ public class PlayerStats : MonoBehaviour {
         //    CancelInvoke();
         //    if (!WeaponSelected)
         //    {
-        //        RangedWeapon.SetActive(true);
-        //        RangedWeapon.transform.position = MeleeWeapon.transform.position;
-        //        RangedWeapon.transform.localScale = new Vector3(RangedWeapon.transform.localScale.x * -1.0f, RangedWeapon.transform.localScale.y, RangedWeapon.transform.localScale.z);
+        //        //RangedWeapon.SetActive(true);
+        //        //RangedWeapon.transform.position = MeleeWeapon.transform.position;
+        //        //RangedWeapon.transform.localScale = new Vector3(//RangedWeapon.transform.localScale.x * -1.0f, //RangedWeapon.transform.localScale.y, //RangedWeapon.transform.localScale.z);
         //        MeleeWeapon.SetActive(false);
-        //        Weapon = RangedWeapon;
+        //        Weapon = //RangedWeapon;
         //    }
         //    else
         //    {
         //        Weapon = MeleeWeapon;
-        //        RangedWeapon.SetActive(false);
+        //        //RangedWeapon.SetActive(false);
         //        MeleeWeapon.SetActive(true);
 
 
@@ -212,10 +212,10 @@ public class PlayerStats : MonoBehaviour {
 
         StaminaRegen();
 
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && availstamina > 10)
         {           // Avatar.sprite = Attacking;
             GetComponent<Rigidbody2D>().velocity = new Vector3(0.0f, 0.0f, 0.0f);
-            availstamina -= 5;
+            availstamina -= 10;
             Weapon.transform.localRotation.Set(Weapon.transform.localRotation.x, Weapon.transform.localRotation.y + 30.5f, Weapon.transform.localRotation.z, Weapon.transform.localRotation.w);
             GetComponent<Animator>().SetBool("attack", true);
             if(MeleeWeapon.activeSelf)
@@ -225,7 +225,7 @@ public class PlayerStats : MonoBehaviour {
                 
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && availstamina > 15)
         {
             GetComponent<Animator>().SetBool("attack", true);
             //Avatar.sprite = Attacking;
@@ -236,13 +236,13 @@ public class PlayerStats : MonoBehaviour {
            // else
                 //Instantiate(ArrowType);
 
-            availstamina -= 5;
+            availstamina -= 15;
         }
 
         if(hitcount <= 0)
         {
             GetComponent<Animator>().SetBool("death", true);
-            Invoke("Death", Time.deltaTime * 30);
+            Invoke("Death", Time.deltaTime * 34);
 			//Death();
               
 
@@ -253,7 +253,7 @@ public class PlayerStats : MonoBehaviour {
     void StaminaRegen()
     {
         if (availstamina < 100)
-            availstamina += Time.deltaTime * 7.5f;
+            availstamina += Time.deltaTime * 8.5f;
         else
             availstamina = 100;
     }
@@ -280,4 +280,5 @@ public class PlayerStats : MonoBehaviour {
     {
         GetComponent<Animator>().ResetTrigger("hurt");
     }
+
 }
