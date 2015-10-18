@@ -38,9 +38,9 @@ public class AM_NPCScript : MonoBehaviour {
 
     void Update()
     {
-        if (!isAlive && audioSources[1].isPlaying == false)
+        if (!isAlive && audioSources[1].isPlaying == false) // If I'm dead
             Destroy(gameObject);
-        else if (currHealth <= 0 && isActive) // If I'm dead
+        else if (currHealth <= 0 && isActive) // If I'm dying
         {
             if (!isRanged)
                 GetComponent<Animator>().SetBool("IsMoving", false);
@@ -116,7 +116,7 @@ public class AM_NPCScript : MonoBehaviour {
                     {
                         GetComponent<Animator>().SetBool("IsMoving", false);
                     }
-                    GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                    GetComponent<Rigidbody2D>().velocity.Set(0f, GetComponent<Rigidbody2D>().velocity.y);
                     GetComponent<Animator>().SetBool("IsInRange", true);
                 }
             }
