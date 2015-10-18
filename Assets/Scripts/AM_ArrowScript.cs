@@ -19,21 +19,11 @@ public class AM_ArrowScript : MonoBehaviour {
 
             if (target != null)
             {
-                if (target.position.x > transform.position.x + 2)
+                if (target.position.x > transform.position.x)
                     transform.Rotate(0.0f, 0.0f, -90.0f);
-                else if (target.position.x < transform.position.x - 2)
+                else
                     transform.Rotate(0.0f, 0.0f, 90.0f);
-                else if (target.position.y < transform.position.y)
-                    transform.Rotate(0.0f, 0.0f, 180.0f);
 
-                
-                //if (target.position.x > transform.position.x)
-                //    transform.Rotate(new Vector3(0f, 0f, 1f), -Vector3.Angle(transform.position, -target.position));
-                //else if (target.position.y < transform.position.y - 1)
-                //    transform.Rotate(new Vector3(0f, 0f, 1f), Vector3.Angle(target.position, transform.position));
-                //else
-                //    transform.Rotate(new Vector3(0f, 0f, 1f), Vector3.Angle(transform.position, -target.position));
-                
                 GetComponent<Rigidbody2D>().AddForce(fireStrength * Vector3.Normalize((target.position - transform.position)));
             }
         }
@@ -54,7 +44,7 @@ public class AM_ArrowScript : MonoBehaviour {
             other.GetComponent<PlayerStats>().hitcount--;
             other.GetComponent<Animator>().SetTrigger("hurt");
         }
-        else if (gameObject.tag == "PlayerWeapon" && other.gameObject.tag == "Enemy")
+        else if (gameObject.tag == "PlayerWeapon" && other.gameObject.tag == "Enemy" && !other.gameObject.GetComponent<AM_NPCScript>().isBoss)
         {
             GetComponent<AudioSource>().Play();
             GetComponent<SpriteRenderer>().enabled = false;

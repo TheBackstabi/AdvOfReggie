@@ -54,6 +54,8 @@
      <Compile Include="Assets\Scripts\CratePiece.cs" />
      <Compile Include="Assets\Scripts\EquippedWeapon.cs" />
      <Compile Include="Assets\Scripts\FallingBehaviour.cs" />
+     <Compile Include="Assets\Scripts\IceCrystalScript.cs" />
+     <Compile Include="Assets\Scripts\IceCrystalSpawnerScript.cs" />
      <Compile Include="Assets\Scripts\LevelChanger.cs" />
      <Compile Include="Assets\Scripts\MessageTrigger.cs" />
      <Compile Include="Assets\Scripts\MusicTransitionScript.cs" />

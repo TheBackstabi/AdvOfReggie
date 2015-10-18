@@ -69,11 +69,6 @@ public class AM_MobSpawnerScript : MonoBehaviour {
         }
     }
 
-    void OnBecameInvisible()
-    {
-        isEnabled = false;
-    }
-
     void OnBecameVisible()
     {
         isEnabled = true;
