@@ -15,6 +15,10 @@ public class AM_NPCScript : MonoBehaviour {
     public bool IsShielded = false; // Enable for ShieldBro; no attacking, no moving
     [Tooltip("Can't move, disables melee")]
     public bool isRanged = false; // Enable for ranged mobs; no moving
+    [Tooltip("Immune to ranged damage")]
+    public bool rangedImmune = false;
+    [Tooltip("Leaves taking damage to the boss script")]
+    public bool isBoss = false;
     [Tooltip("Is the mob on screen and able to do stuff")]
     public bool isActive = true;
 
@@ -22,7 +26,7 @@ public class AM_NPCScript : MonoBehaviour {
     private float moveDir, prevDir;
     private AudioSource[] audioSources;
     private Collider2D lastPlatform = null;
-    private bool isAttacking = false, isAlive = true;
+    private bool isAttacking = false, isAlive = true, bossImmunity = false, isStunned = false;
 
 	// Use this for initialization
 	void Start () {
@@ -36,7 +40,7 @@ public class AM_NPCScript : MonoBehaviour {
     {
         if (!isAlive && audioSources[1].isPlaying == false) // If I'm dead
             Destroy(gameObject);
-        else if (currHealth <= 0 && isActive) // If I need to die
+        else if (currHealth <= 0 && isActive) // If I'm dying
         {
             if (!isRanged)
                 GetComponent<Animator>().SetBool("IsMoving", false);
@@ -45,6 +49,7 @@ public class AM_NPCScript : MonoBehaviour {
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             GetComponent<Animator>().SetBool("Dead", true);
         }
+        
     }
 	
 	// Update is called once per frame
@@ -57,8 +62,8 @@ public class AM_NPCScript : MonoBehaviour {
                 GetComponent<Rigidbody2D>().gravityScale = 1;
             }
 
-            // If I'm on the ground and not attacking, I can move
-            if (GetComponent<Rigidbody2D>().velocity.y == 0)
+            // If I'm on the ground
+            if (GetComponent<Rigidbody2D>().velocity.y == 0 && !isStunned && !isAttacking)
             {
                 if (Reggie.transform.position.x >= transform.position.x) // Adjust direction based on player loc
                 {
@@ -78,11 +83,11 @@ public class AM_NPCScript : MonoBehaviour {
                 prevDir = moveDir;
             }
             
-            if (!IsShielded) // ShieldBros don't attack or move
+            if (!IsShielded && !isStunned) // ShieldBros don't attack or move, can't move while stunned
             {
                 if (Vector3.Distance(Reggie.transform.position, transform.position) > attackRange && !isAttacking)
                 {
-                    // We're not in attack range
+                    // We're not in attack range, and we're currently not attacking
                     
                     GetComponent<Animator>().SetBool("IsInRange", false);
 
@@ -95,7 +100,10 @@ public class AM_NPCScript : MonoBehaviour {
                         {
                             // We're on the ground, move into range
                             
-                            currVel.x = moveDir * moveSpeed;
+                            if (currVel.x < moveSpeed)
+                                currVel.x = moveSpeed * moveDir;
+                            else
+                                currVel.x = currVel.x + moveDir * Time.deltaTime * moveSpeed;
                             GetComponent<Rigidbody2D>().velocity = currVel;
                             
                         }
@@ -108,11 +116,10 @@ public class AM_NPCScript : MonoBehaviour {
                     {
                         GetComponent<Animator>().SetBool("IsMoving", false);
                     }
-                    GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                    GetComponent<Rigidbody2D>().velocity.Set(0f, GetComponent<Rigidbody2D>().velocity.y);
                     GetComponent<Animator>().SetBool("IsInRange", true);
                 }
             }
-
 
         }
 	}
@@ -121,37 +128,27 @@ public class AM_NPCScript : MonoBehaviour {
     {
         if (Vector3.Distance(Reggie.transform.position, transform.position) <= attackRange)
         {
+            // Reggie's in range, deal damage.
+            // If checks are for running through the enemy to dodge
             if (Reggie.transform.position.x <= transform.position.x && moveDir == -1)
             {
                 if (Reggie.GetComponent<PlayerStats>().isCrouched)
-                {
                     Reggie.GetComponent<PlayerStats>().hitcount -= (damageVal / 2);
-                    Reggie.GetComponent<Animator>().SetTrigger("hurt");
-                }
                 else
-                {
                     Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
-                    Reggie.GetComponent<Animator>().SetTrigger("hurt");
-                }
                 audioSources[2].Play();
             }
             else if (Reggie.transform.position.x >= transform.position.x && moveDir == 1)
             {
                 if (Reggie.GetComponent<PlayerStats>().isCrouched)
-                {
                     Reggie.GetComponent<PlayerStats>().hitcount -= (damageVal / 2);
-                    Reggie.GetComponent<Animator>().SetTrigger("hurt");
-                }
                 else
-                {
                     Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
-                    Reggie.GetComponent<Animator>().SetTrigger("hurt");
-                }
                 Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
                 audioSources[2].Play();
             }
         }
-        else
+        else // Reggie moved out of range before attack finished
         {
             audioSources[3].Play();
         }
@@ -184,19 +181,25 @@ public class AM_NPCScript : MonoBehaviour {
         GetComponent<SpriteRenderer>().enabled = false;
     }
 
-    void OnTriggerEnter2D(Collider2D coll) // Get hit by stuff
+    void OnTriggerEnter2D(Collider2D coll) // I need to land/take damage
     {
-        if (coll.gameObject.tag == "PlayerWeapon")
+        if (coll.gameObject.tag == "PlayerWeapon" && !isBoss)
         {
-            currHealth -= (int)coll.gameObject.GetComponent<WeaponStats>().damage;
-            //GetComponent<Rigidbody2D>().AddForce(new Vector2(5000f * -moveDir, 0f));
-            transform.Translate(.25f * -moveDir, .15f, 0f);
-    		audioSources[0].Play();
+            if (!bossImmunity)
+            {
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(3000 * -moveDir, 1000));
+                prevDir = 0;
+                currHealth -= (int)coll.gameObject.GetComponent<WeaponStats>().damage;
+                audioSources[0].Play();
+            }
         }
-        if (coll.gameObject.tag == "PlayerArrow")
+        if (coll.gameObject.tag == "PlayerArrow" && !isBoss)
         {
-            currHealth -= coll.gameObject.GetComponent<AM_ArrowScript>().GetDamageVal();
-            audioSources[0].Play();
+            if (!bossImmunity && !rangedImmune)
+            {
+                currHealth -= coll.gameObject.GetComponent<AM_ArrowScript>().GetDamageVal();
+                audioSources[0].Play();
+            }
         }
         else if (coll.gameObject.tag == "Platform")
         {
@@ -206,13 +209,14 @@ public class AM_NPCScript : MonoBehaviour {
             lastPlatform = coll;
             GetComponent<Rigidbody2D>().gravityScale = 0;
         }
-        else if (coll.gameObject.tag == "Hazardous")
+        else if (coll.gameObject.tag == "Hazardous" && !isBoss)
         {
-            currHealth -= 5;
+            if (!bossImmunity)
+                currHealth -= 5;
         }
     }
 
-    void OnTriggerStay2D(Collider2D other) // Platform detection
+    void OnTriggerStay2D(Collider2D other) // I need to land
     {
         if (other.gameObject.tag == "Platform")
         {
@@ -224,18 +228,19 @@ public class AM_NPCScript : MonoBehaviour {
         }
     }
 
-    //void OnBecameInvisible()
-    //{
-    //    isActive = false;
-    //    GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-    //}
-    //
-    //void OnBecameVisibile()
-    //{
-    //    isActive = true;
-    //}
+    void OnBecameInvisible() // Stop archers that are out of view
+    {
+        if (isRanged)
+            isActive = false;
+    }
 
-    public void ResetFacing() // Fix for backwards enemies
+    void OnBecameVisibile() // Archers can start firing
+    {
+        if (isRanged)
+            isActive = true;
+    }
+
+    public void ResetFacing() // Fix for backwards NPC's
     {
         if (Reggie.transform.position.x > transform.position.x)
         {
@@ -253,13 +258,46 @@ public class AM_NPCScript : MonoBehaviour {
         transform.Translate(0.0f, -1.0f, 0.0f);
     }
 
+    // These are used by boss scripts and UI elements
     public void TakeDamage(int _damage)
     {
         currHealth -= _damage;
     }
 
-    public int GetHealth() // Maybe necessary for healthbars?
+    public int GetHealth()
     {
         return currHealth;
+    }
+
+    public void ToggleImmunity(bool val)
+    {
+        if (val != null)
+            bossImmunity = val;
+        else
+            bossImmunity = !bossImmunity;
+    }
+
+    public bool GetImmunity()
+    {
+        return bossImmunity;
+    }
+
+    public void ToggleStun(bool val)
+    {
+        if (val != null)
+            isStunned = val;
+        else
+            isStunned = !isStunned;
+
+        if (isStunned)
+        {
+            GetComponent<Animator>().SetBool("IsInRange", false);
+            GetComponent<Animator>().SetBool("IsMoving", false);
+        }
+    }
+
+    public bool IsStunned()
+    {
+        return isStunned;
     }
 }
