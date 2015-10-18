@@ -10,19 +10,24 @@ public class LevelChanger : MonoBehaviour
 	
 	void OnTriggerStay2D(Collider2D other)
 	{
-		if(other.gameObject.tag == "Player" && Input.GetMouseButton(0))
+		if(GameObject.FindGameObjectsWithTag("Enemy").Length <= 3)
 		{
-			if(Application.loadedLevelName == "Real_Tutorial")
+			if(gameObject.name == "Exit Door")
+				GetComponent<Animator>().SetBool("exit", true);
+			if(other.gameObject.tag == "Player" && Input.GetMouseButton(0))
 			{
-				Application.LoadLevel("Level 7 Secret Halls");
-			}
-			if(Application.loadedLevelName == "Level 7 Secret Halls")
-			{
-				Application.LoadLevel("Boss Arctic Menace");
-			}
-			if(Application.loadedLevelName == "Boss Arctic Menace")
-			{
-				Application.LoadLevel("Main Menu");
+				if(Application.loadedLevelName == "Real_Tutorial")
+				{
+					Application.LoadLevel("Level 7 Secret Halls");
+				}
+				if(Application.loadedLevelName == "Level 7 Secret Halls")
+				{
+					Application.LoadLevel("Boss Arctic Menace");
+				}
+				if(Application.loadedLevelName == "Boss Arctic Menace")
+				{
+					Application.LoadLevel("Main Menu");
+				}
 			}
 		}
 	}
