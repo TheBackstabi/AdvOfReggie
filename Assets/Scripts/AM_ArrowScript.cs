@@ -12,6 +12,7 @@ public class AM_ArrowScript : MonoBehaviour {
         if (gameObject.tag == "PlayerWeapon")
         {
             // Player stuff
+            GetComponent<Rigidbody2D>().AddForce(fireStrength * Vector3.Normalize(Input.mousePosition));
         }
         else
         {

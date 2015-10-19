@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class AM_NPCScript : MonoBehaviour {
@@ -22,6 +23,8 @@ public class AM_NPCScript : MonoBehaviour {
     [Tooltip("Is the mob on screen and able to do stuff")]
     public bool isActive = true;
 
+    public Slider HealthBar;
+
     private int currHealth;
     private float moveDir, prevDir;
     private AudioSource[] audioSources;
@@ -34,6 +37,8 @@ public class AM_NPCScript : MonoBehaviour {
         prevDir = 0;
         audioSources = GetComponents<AudioSource>();
         ResetFacing();
+        HealthBar.maxValue = spawnHealth;
+        HealthBar.value = currHealth;
    	}
 
     void Update()
@@ -49,6 +54,8 @@ public class AM_NPCScript : MonoBehaviour {
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             GetComponent<Animator>().SetBool("Dead", true);
         }
+
+        HealthBar.value = currHealth;
         
     }
 	

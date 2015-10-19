@@ -19,10 +19,16 @@ public class PlayerStats : MonoBehaviour {
     Sprite Idle;
 
     [SerializeField]
+    Sprite MeleeIdle;
+
+    [SerializeField]
+    Sprite RangedIdle;
+
+    [SerializeField]
     GameObject MeleeWeapon;
 
-    //[SerializeField]
-    //GameObject RangedWeapon;
+    [SerializeField]
+    GameObject RangedWeapon;
 
     [SerializeField]
     GameObject Weapon;
@@ -223,10 +229,12 @@ public class PlayerStats : MonoBehaviour {
             if (WeaponSelected)
             {
                 Weapon = MeleeWeapon;
+                Idle = MeleeIdle;
             }
             else
             {
-               // Weapon = RangedWeapon;
+                Weapon = RangedWeapon;
+                Idle = RangedIdle;
             }
 
             WeaponSelected = !WeaponSelected;
@@ -242,6 +250,14 @@ public class PlayerStats : MonoBehaviour {
         if (MeleeWeapon.activeSelf)
         {
             MeleeWeapon.GetComponent<BoxCollider2D>().enabled = true;
+        }
+        else
+        {
+            RangedWeapon.GetComponent<AM_ArrowScript>().Invoke("Start", 0.0f);
+            //GameObject newArrow = Instantiate(baseScript.Arrow, transform.position, transform.rotation) as GameObject;
+            //newArrow.GetComponent<AM_ArrowScript>().SetDamageVal(arrowDamageVal);
+            //newArrow.tag = "EnemyArrow";
+            //newArrow.GetComponent<AM_ArrowScript>().target = Reticule.transform;
         }
     }
 
