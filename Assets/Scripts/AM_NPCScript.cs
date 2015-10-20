@@ -187,7 +187,7 @@ public class AM_NPCScript : MonoBehaviour {
         {
             if (!bossImmunity)
             {
-                GetComponent<Rigidbody2D>().AddForce(new Vector2(3000 * -moveDir, 1000));
+                //GetComponent<Rigidbody2D>().AddForce(new Vector2(3000 * -moveDir, 1000));
                 prevDir = 0;
                 currHealth -= (int)coll.gameObject.GetComponent<WeaponStats>().damage;
                 audioSources[0].Play();

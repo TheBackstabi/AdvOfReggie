@@ -14,22 +14,30 @@ public class LevelChanger : MonoBehaviour
 		{
 			if(gameObject.name == "Exit Door")
 				GetComponent<Animator>().SetBool("exit", true);
-			if(other.gameObject.tag == "Player" && Input.GetMouseButton(0))
+			if(Application.loadedLevelName == "Real_Tutorial" && other.gameObject.tag == "Player" && Input.GetMouseButton(0))
 			{
-				if(Application.loadedLevelName == "Real_Tutorial")
-				{
-					Application.LoadLevel("Level 7 Secret Halls");
-				}
-				if(Application.loadedLevelName == "Level 7 Secret Halls")
-				{
-					Application.LoadLevel("Boss Arctic Menace");
-				}
-				if(Application.loadedLevelName == "Boss Arctic Menace")
-				{
-					Application.LoadLevel("Main Menu");
-				}
+				Application.LoadLevel("Level 7 Secret Halls");
 			}
 		}
+		if(GameObject.FindGameObjectsWithTag("Enemy").Length <= 3)
+		{
+			if(gameObject.name == "Exit Door")
+				GetComponent<Animator>().SetBool("exit", true);
+			if(Application.loadedLevelName == "Level 7 Secret Halls" && other.gameObject.tag == "Player" && Input.GetMouseButton(0))
+			{
+				Application.LoadLevel("Boss Arctic Menace");
+			}
+		}
+		if(GameObject.FindGameObjectsWithTag("Enemy").Length <= 1 && other.gameObject.tag == "Player" && Input.GetMouseButton(0))
+		{
+			if(gameObject.name == "Exit Door")
+				GetComponent<Animator>().SetBool("exit", true);
+			if(Application.loadedLevelName == "Boss Arctic Menace")
+			{
+				Application.LoadLevel("Main Menu");
+			}
+		}
+		
 	}
 
 	// Use this for initialization
