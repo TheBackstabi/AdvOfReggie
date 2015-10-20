@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class AM_NPCScript : MonoBehaviour {
@@ -22,6 +23,8 @@ public class AM_NPCScript : MonoBehaviour {
     [Tooltip("Is the mob on screen and able to do stuff")]
     public bool isActive = true;
 
+    public Slider HealthBar;
+
     private int currHealth;
     private float moveDir, prevDir;
     private AudioSource[] audioSources;
@@ -34,6 +37,8 @@ public class AM_NPCScript : MonoBehaviour {
         prevDir = 0;
         audioSources = GetComponents<AudioSource>();
         ResetFacing();
+        HealthBar.maxValue = spawnHealth;
+        HealthBar.value = currHealth;
    	}
 
     void Update()
@@ -49,6 +54,8 @@ public class AM_NPCScript : MonoBehaviour {
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             GetComponent<Animator>().SetBool("Dead", true);
         }
+
+        HealthBar.value = currHealth;
         
     }
 	
@@ -116,8 +123,11 @@ public class AM_NPCScript : MonoBehaviour {
                     {
                         GetComponent<Animator>().SetBool("IsMoving", false);
                     }
-                    GetComponent<Rigidbody2D>().velocity.Set(0f, GetComponent<Rigidbody2D>().velocity.y);
+                    Vector2 vel = GetComponent<Rigidbody2D>().velocity;
+                    vel.x = 0;
+                    GetComponent<Rigidbody2D>().velocity = vel;
                     GetComponent<Animator>().SetBool("IsInRange", true);
+                    isAttacking = true;
                 }
             }
 
@@ -126,33 +136,36 @@ public class AM_NPCScript : MonoBehaviour {
 
     void MeleeAttack() // Used by animator
     {
-        if (Vector3.Distance(Reggie.transform.position, transform.position) <= attackRange)
+        if (isAttacking)
         {
-            // Reggie's in range, deal damage.
-            // If checks are for running through the enemy to dodge
-            if (Reggie.transform.position.x <= transform.position.x && moveDir == -1)
+            if (Vector3.Distance(Reggie.transform.position, transform.position) <= attackRange)
             {
-                if (Reggie.GetComponent<PlayerStats>().isCrouched)
-                    Reggie.GetComponent<PlayerStats>().hitcount -= (damageVal / 2);
-                else
+                // Reggie's in range, deal damage.
+                // If checks are for running through the enemy to dodge
+                if (Reggie.transform.position.x <= transform.position.x && moveDir == -1)
+                {
+                    if (Reggie.GetComponent<PlayerStats>().isCrouched)
+                        Reggie.GetComponent<PlayerStats>().hitcount -= (damageVal / 2);
+                    else
+                        Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
+                    audioSources[2].Play();
+                }
+                else if (Reggie.transform.position.x >= transform.position.x && moveDir == 1)
+                {
+                    if (Reggie.GetComponent<PlayerStats>().isCrouched)
+                        Reggie.GetComponent<PlayerStats>().hitcount -= (damageVal / 2);
+                    else
+                        Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
                     Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
-                audioSources[2].Play();
+                    audioSources[2].Play();
+                }
             }
-            else if (Reggie.transform.position.x >= transform.position.x && moveDir == 1)
+            else // Reggie moved out of range before attack finished
             {
-                if (Reggie.GetComponent<PlayerStats>().isCrouched)
-                    Reggie.GetComponent<PlayerStats>().hitcount -= (damageVal / 2);
-                else
-                    Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
-                Reggie.GetComponent<PlayerStats>().hitcount -= damageVal;
-                audioSources[2].Play();
+                audioSources[3].Play();
             }
+            isAttacking = false;
         }
-        else // Reggie moved out of range before attack finished
-        {
-            audioSources[3].Play();
-        }
-        isAttacking = false;
     }
 
     void PrepRangedSound() // Used by animator; fire arrow sfx is borked
@@ -166,6 +179,7 @@ public class AM_NPCScript : MonoBehaviour {
         newArrow.GetComponent<AM_ArrowScript>().target = Reggie.transform;
         newArrow.GetComponent<AM_ArrowScript>().SetDamageVal(damageVal);
         newArrow.tag = "EnemyArrow";
+        isAttacking = false;
     }
 
     void Dying() // Used by animator
@@ -187,7 +201,6 @@ public class AM_NPCScript : MonoBehaviour {
         {
             if (!bossImmunity)
             {
-                //GetComponent<Rigidbody2D>().AddForce(new Vector2(3000 * -moveDir, 1000));
                 prevDir = 0;
                 currHealth -= (int)coll.gameObject.GetComponent<WeaponStats>().damage;
                 audioSources[0].Play();
@@ -293,6 +306,7 @@ public class AM_NPCScript : MonoBehaviour {
         {
             GetComponent<Animator>().SetBool("IsInRange", false);
             GetComponent<Animator>().SetBool("IsMoving", false);
+            isAttacking = false;
         }
     }
 

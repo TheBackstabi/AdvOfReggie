@@ -24,8 +24,9 @@ public class IceCrystalScript : MonoBehaviour {
 	void Update () {
         if (!isEnabled && !GetComponent<AudioSource>().isPlaying)
             Destroy(gameObject);
-        else if (touchedGround)
+        else if (touchedGround && !hitByPlayer)
         {
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             timeOnGround += Time.deltaTime;
             if (timeOnGround >= 8.0f)
                 Destroy(gameObject);
